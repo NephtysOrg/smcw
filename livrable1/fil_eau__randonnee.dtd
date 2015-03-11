@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Auteur : Charles Follet -->
+
+<!ELEMENT randonnee (etape+)>
+    <!-- une étape doit impérativement contenir les balises entre ()-->
+    <!ELEMENT etape (num_etape|libelle|distance|temps|description)*>
+        <!-- un entier > 0, unique (pour XMLschema)-->
+        <!ELEMENT num_etape (#PCDATA)>
+        <!-- une chaine de carractère, unique (pour XMLschema)-->
+        <!ELEMENT libelle (#PCDATA)>
+        <!ELEMENT distance (valeur|unite)*>
+            <!-- un entier > 0 (pour XMLschema)-->
+            <!ELEMENT valeur (#PCDATA)>
+            <!-- {m, km, ...} (pour XMLschema)-->
+            <!ELEMENT unite (#PCDATA)>
+        <!ELEMENT temps (heure|minute)*>
+            <!-- 0<= t <24 (pour XMLschema)-->
+            <!ELEMENT heure (#PCDATA)>
+            <!-- 0<= t <60 (pour XMLschema)-->
+            <!ELEMENT minute (#PCDATA)>
+        <!ELEMENT description (#PCDATA|voie_routiere|voie_fluviale|lieu_dit|batiment|ville)*>
+            <!ELEMENT voie_routiere (#PCDATA)>
+            <!ELEMENT voie_fluviale (#PCDATA)>
+            <!ELEMENT lieu_dit (#PCDATA)>
+            <!ELEMENT batiment (#PCDATA)>
+            <!ELEMENT ville (#PCDATA)>

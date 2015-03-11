@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Auteur : Charles Follet -->
+
+<!DOCTYPE randonnee SYSTEM "fil_eau__randonnee.dtd">
+
+<randonnee>
+    <etape>
+        <num_etape>1</num_etape><libelle>Avenue Joliot-Curie</libelle>
+        <distance><valeur>1220</valeur> <unite>m</unite></distance><temps><heure>00</heure><minute>15</minute></temps>
+        <description>
+            Il faut tourner le dos au <voie_fluviale>gave de Pau</voie_fluviale> et prendre la rue <voie_routiere>de l'Artisanat</voie_routiere> vers le sud. Traversez la double-voie et poursuivez en face par l'<voie_routiere>avenue Joliot-Curie</voie_routiere>. Laissez à droite le <batiment>lycée professionnel de Jurançon</batiment> tout en métal brillant et en tubes métalliques puis franchissez une passerelle pour pénétrer dans une zone de pavillons modernes. Poursuivez par la <voie_routiere>rue Auguste Renoir</voie_routiere> puis, au bout, virer à droite en direction de la rocade. 
+        </description>
+    </etape>
+    
+    <etape>
+        <num_etape>2</num_etape><libelle>Le Clos Touzet</libelle>
+        <distance><valeur>2300</valeur> <unite>m</unite></distance><temps><heure>00</heure> <minute>45</minute></temps>
+        <description>
+            Traverser la rocade puis continuez en vous élevant par le <voie_routiere>chemin de Monplaisir</voie_routiere>, à la limite d'un bois. Laisser les <batiment>bâtiments du « Nid béarnais »</batiment> à gauche et continuer en sous-bois. Débouchez au sommet du coteau face « Au <lieu_dit>Clos Touzet</lieu_dit> » où la vue sur la plaine de Pau mérite un long coup d'oeil. Poursuivez en face. Ne pas descendre trop longtemps vers Jurançon, mais suivre l'<voie_routiere>avenue des Frères Barthélemy</voie_routiere> en face.
+        </description>
+    </etape>
+    
+    <etape>
+        <num_etape>3</num_etape><libelle>Le chemin Mirabel</libelle>
+        <distance><valeur>1200</valeur> <unite>m</unite></distance><temps><heure>00</heure><minute>20</minute></temps>
+        <description>
+            Face à l'entrée du <lieu_dit>Clos Henri IV</lieu_dit>, au N° 223, descendre à droite le <voie_routiere>chemin Mirabel</voie_routiere> (panneau) qui se faufile en sous-bois. Juste avant l'entrée de la <batiment>ferme Larrau</batiment> (remarquer le séquoia isolé) prenez un chemin creux à gauche qui plonge dans un sous-bois magnifique. Il décrit une épingle et s'enfonce dans une forêt où la lumière pénètre difficilement. Rejoignez le lit d'un petit ruisseau que vous suivez vers l'aval. Mousses, lichens, fougères constituent le décor luxuriant de cette descente humide.
+        </description>
+    </etape>
+    
+    <etape>
+        <num_etape>4</num_etape><libelle>Le Clos Lapeyre</libelle>
+        <distance><valeur>2430</valeur> <unite>m</unite></distance>
+        <temps><heure>00</heure><minute>45</minute></temps>
+        <description>
+            Emprunter la route à gauche (<voie_routiere>chemin Vignau</voie_routiere>) où vous rencontrez un chemin équestre (itinéraire équestre Pyrénéen) que vous suivrez maintenant facilement vers le sud. Franchissez un pont et grimpez une piste cimentée «<voie_routiere> camin de Sobolle</voie_routiere> ». Dépasser la belle <batiment>ferme Sobolle</batiment> et continuer dans le bois. Rejoignez un chemin goudronné et le suivre à gauche vers le <lieu_dit>Clos Lapeyre</lieu_dit>. Après la première vigne, descendre à droite. Au premier palier, continuer à droite entre les vignes. En dessous, descendez en lisière d'un petit bois et franchissez un portillon métallique. Emprunter la D230 à droite sur 1 km.
+        </description>
+    </etape>
+    
+    <etape>
+        <num_etape>5</num_etape><libelle>Chemin de la Rec</libelle>
+        <distance><valeur>3060</valeur> <unite>m</unite></distance><temps><heure>00</heure><minute>45</minute></temps>
+        <description>
+            Au <voie_routiere>croisement de Roumiga</voie_routiere>, tourner à gauche, franchissez un pont et traversez la vallée vers le nord dans une cuvette profonde, agréable et paisible. Prenez à droite la D 217, puis aller à gauche vers St-Faust (2 km). Grimper le <voie_routiere>chemin de la Rec</voie_routiere> qui serpente en sous-bois et rejoignez la <ville>commune de St-Faust</ville> face à l'église (belle vue sur l'Ossau).
+        </description>
+    </etape>
+    
+    <etape>
+        <num_etape>6</num_etape><libelle>Les coteaux de St-Faust face.</libelle>
+        <distance><valeur>3915</valeur> <unite>m</unite></distance><temps><heure>01</heure><minute>10</minute></temps>
+        <description>
+            Emprunter la <voie_routiere>D 502</voie_routiere> vers la droite pendant 1500 m et passer devant la <batiment>Cité des Abeilles</batiment>. Prenez le <voie_routiere>chemin Mantoulan</voie_routiere> à gauche et longer de belles vignes plantées sur un flanc sud. Suivez le balisage d'un chemin baptisé « <voie_routiere>les coteaux de St-Faust</voie_routiere>». Au sommet de la colline, prenez le beau <voie_routiere>chemin Constantine</voie_routiere> à droite qui file vers le nord. Il contourne deux exploitations (Larréheuga et Coutchous) et plonge entre les prairies. Rejoignez un chemin goudronné. En bas de la côte, virer à droite le long du <voie_fluviale>ruisseau Lahourcade</voie_fluviale>.
+        </description>
+    </etape>
+    
+    <etape>
+        <num_etape>7</num_etape><libelle>Le ruisseau des Hies descente humide.</libelle>
+        <distance><valeur>3100</valeur> <unite>m</unite></distance><temps><heure>00</heure><minute>45</minute></temps>
+        <description>
+            Franchir le ruisseau à gué et tourner à droite (Panneau interdiction aux quads). S'élever rudement par un sentier dans les bois. Rejoignez l'<batiment>église de St-Faust-de-bas</batiment>, puis descendez à gauche par la <voie_routiere>D 502</voie_routiere>. Dans un virage prononcé à gauche, partir à droite à travers bois par le <voie_routiere>chemin Coureyou</voie_routiere>, puis rejoignez une nouvelle fois la <voie_routiere>D 502</voie_routiere> qui conduit à l'entrée de <ville>Laroin</ville>. La quitter pour suivre le ruisseau des Hies en face. Franchir une passerelle et parvenez au centre du village. Traverser la <voie_routiere>D 2</voie_routiere> et utiliser le <voie_routiere>chemin du Stade</voie_routiere> qui rejoint le ruisseau des Hies face à une passerelle. Longer le ruisseau puis passez sous la rocade <voie_routiere>D 2</voie_routiere> par un tunnel à l'ambiance curieuse. 
+        </description>
+    </etape>
+    
+    <etape>
+        <num_etape>8</num_etape><libelle>Le gave de Pau</libelle>
+        <distance><valeur>4770</valeur> <unite>m</unite></distance><temps><heure>01</heure><minute>15</minute></temps>
+        <description>
+            Suivre la rive gauche du <voie_fluviale>gave de Pau</voie_fluviale> longuement où les amateurs d'oiseaux se régaleront en surprenant les hérons ou les cormorans. Laissez un centre équestre à gauche et ignorez juste après la remarquable passerelle piétons de Laroin aux haubans en fibre de verre. Rejoindre le <batiment>pont de Billères</batiment> où vous passerez dessous et l'emprunter pour franchir le gave. Prendre à droite à son extrémité est un sentier facile et continuer maintenant rive droite en longeant le <batiment>golf de Billères</batiment> par le sud. Contourner le <batiment>restaurant "Au bord de l'eau"</batiment> et franchissez la passerelle pour piétons afin de retrouver le parking de départ.
+        </description>
+    </etape>
+</randonnee>
