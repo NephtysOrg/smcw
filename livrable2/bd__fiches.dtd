@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Auteur : Charles Follet -->
+
+	<!ELEMENT fiches (fiche_technique,fiche_information)>
+	    <!-- une fiche doit impérativement contenir les balises entre ()-->
+	    <!ELEMENT fiche_technique (information,recommandations,difficulte,epoque,taille,altitude,horaire,depart, arrivee)>
+		<!ELEMENT information (#PCDATA)>
+		<!ELEMENT recommandations (#PCDATA)>
+		<!ELEMENT difficulte (#PCDATA)>
+		<!ELEMENT epoque (saison*)>	
+			<!ELEMENT saison (#PCDATA)>
+		<!ELEMENT taille EMPTY>
+			<!ATTLIST taille
+				denivele CDATA #REQUIRED
+				longueur CDATA #REQUIRED
+				unite (m|km) #REQUIRED
+			>
+		<!ELEMENT altitude EMPTY>
+			<!ATTLIST altitude
+				depart CDATA #REQUIRED
+				arrive CDATA #REQUIRED
+				maximale CDATA #REQUIRED
+				unite (m|km) #REQUIRED
+			>
+		<!ELEMENT horaire EMPTY>
+			<!ATTLIST horaire
+				heure CDATA #REQUIRED
+				minute CDATA #REQUIRED
+				seconde CDATA #REQUIRED
+			>
+			
+		<!ELEMENT depart EMPTY>
+			<!ATTLIST depart
+				lieu CDATA #REQUIRED
+				commune CDATA #REQUIRED
+			>
+		<!ELEMENT arrivee EMPTY>
+			<!ATTLIST arrivee
+				lieu CDATA #REQUIRED
+				commune CDATA #REQUIRED
+			>
+	    <!ELEMENT fiche_information (cartes,carroyage,nom,acces,parkings,type_parcours,types_chemin,types_terrain,liste_materiel)>
+		<!ELEMENT cartes (carte+)>
+			<!ELEMENT carte (#PCDATA)>
+		<!ELEMENT carroyage (#PCDATA)>
+		<!ELEMENT nom (#PCDATA)>
+		<!ELEMENT acces (#PCDATA)>
+		<!ELEMENT parkings (parking+)>
+			<!ELEMENT parking (#PCDATA)>
+		<!ELEMENT type_parcours (#PCDATA)>
+		<!ELEMENT types_chemin (type_chemin+)>
+			<!ELEMENT type_chemin (#PCDATA)>
+		<!ELEMENT types_terrain (type_terrain+)>
+			<!ELEMENT type_terrain (#PCDATA)>
+		<!ELEMENT liste_materiel (materiel+)>
+			<!ELEMENT materiel (#PCDATA)>

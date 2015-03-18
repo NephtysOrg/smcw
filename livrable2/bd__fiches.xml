@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Auteur : Charles Follet -->
+
+<!DOCTYPE fiches SYSTEM "bd__fiches.dtd">
+
+<fiches>
+    <fiche_technique>
+        <information>Office de Tourisme de Pau, tél: 05 59 27 27 08 Météorologie: 08 36 68 02 (64)</information>  
+        <recommandations>L'itinéraire emprunte des petits bouts de randonnées abondamment balisés et facilement repérables. Evitez de le parcourir après un fort orage, quelques raides chemins en terre peuvent être boueux et le gué de Lahourcade peut alors demander un détour.</recommandations>
+        <difficulte>FACILE</difficulte>
+        <epoque><saison>HIVER</saison> <saison>PRINTEMPS</saison><saison>AUTOMNE</saison></epoque>
+        <taille denivele="422" longueur="21995" unite="m"/>
+        <altitude depart="170" arrive="170" maximale="328" unite="m"/>
+        <horaire heure="06" minute="00" seconde="00"/>
+        <depart lieu="Stade de Jurançon" commune="Jurançon"/>
+        <arrivee lieu="Stade de Jurançon" commune="Jurançon"/>
+    </fiche_technique>
+    
+    <fiche_information>
+        <cartes><carte>PAU</carte></cartes>
+        <carroyage>1545ET</carroyage> 
+        <nom>IGN TOP25</nom> 
+        <acces>De Pau (sortie n°10 de l'A64) prenez la direction Saragosse-Jurançon jusqu'au pont d'Espagne que vous franchissez vers le sud. Prenez à droite la rocade (Av du Corps-Franc Pommies) toujours en direction Saragosse et dépassez un premier rond point. Parcourez 350 m et prenez à droite la rue de l'Artisanat jusqu'à un petit parking situé rive gauche du gave de Pau.</acces>
+        <parkings><parking>Rive gauche du gave près d'une passerelle pour piétons et d'un parcours d'entraînement pour les chiens de défense. C'est aussi le départ d'un circuit de footing.</parking></parkings>
+        <type_parcours>BOUCLE</type_parcours> 
+        <types_chemin><type_chemin>CHEMIN GOUDRONNE</type_chemin><type_chemin>SENTIER BALISE</type_chemin></types_chemin>
+        <types_terrain><type_terrain>ZONE AGRICOLE</type_terrain><type_terrain>ZONE URBAINE</type_terrain></types_terrain>
+        <liste_materiel><materiel>Jumelles</materiel><materiel>chaussures de marche</materiel><materiel>bâtons</materiel></liste_materiel>
+    </fiche_information>
+</fiches>

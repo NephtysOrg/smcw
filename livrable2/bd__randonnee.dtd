@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Auteur : Charles Follet -->
+
+<!ELEMENT randonnee (etape+)>
+    <!-- une étape doit impérativement contenir les balises entre ()-->
+    <!ELEMENT etape (distance,temps,description,lieux?)>
+    <!ATTLIST etape 
+		numero NMTOKEN #REQUIRED
+		libelle CDATA #REQUIRED
+	>
+        <!ELEMENT distance EMPTY>
+		<!ATTLIST distance 
+			valeur NMTOKEN #REQUIRED
+			unite (m|km) #REQUIRED
+		>
+        <!ELEMENT temps EMPTY>
+        <!ATTLIST temps 
+			heure NMTOKEN #REQUIRED
+			minute NMTOKEN #REQUIRED
+		>
+        <!ELEMENT description (#PCDATA)>
+        <!ELEMENT lieux (lieu+)>
+			<!ELEMENT lieu (#PCDATA)>
+			<!ATTLIST lieu 
+			type (voie_routiere|voie_fluviale|lieu_dit|batiment|ville) #REQUIRED
+			coord NMTOKEN #REQUIRED
+			>

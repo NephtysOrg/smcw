@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Auteur: Roland Bary -->
+
+<!ELEMENT fiches (fiche_technique|fiche_information)*>
+    <!-- une fiche doit impérativement contenir les balises entre ()-->
+    <!ELEMENT fiche_technique (information|recommandations|difficulte|epoque|denivele|longueur|alt_dep|alt_arr|alt_max|horaire|lieu_dep|lieu_arr|commune_dep|commune_arr)*>
+        <!ELEMENT information (#PCDATA)>
+        <!ELEMENT recommandations (#PCDATA)>
+        <!ELEMENT difficulte (#PCDATA)>
+        <!ELEMENT epoque (saison*)>
+        	<!ELEMENT saison (#PCDATA)>
+        <!ELEMENT valeur (#PCDATA)>
+        <!ELEMENT unite (#PCDATA)>
+        <!ELEMENT denivele (valeur|unite)*>
+        <!ELEMENT longueur (valeur|unite)* >
+        <!ELEMENT alt_dep (valeur|unite)* >
+        <!ELEMENT alt_arr (valeur|unite)* >
+        <!ELEMENT alt_max (valeur|unite)* >
+        <!ELEMENT horaire (heure|minute|seconde)*>
+                <!ELEMENT heure (#PCDATA)>
+                <!ELEMENT minute (#PCDATA)>
+                <!ELEMENT seconde (#PCDATA)>
+        <!ELEMENT lieu_dep (#PCDATA)>
+        <!ELEMENT lieu_arr (#PCDATA)>
+        <!ELEMENT commune_dep (#PCDATA)>
+        <!ELEMENT commune_arr (#PCDATA)>
+    <!ELEMENT fiche_information (cartes|carroyage|nom|acces|parkings|type_parcours|types_chemin|types_terrain|liste_materiel)*>
+        <!ELEMENT cartes (carte+)>
+        	<!ELEMENT carte (#PCDATA)>
+        <!ELEMENT carroyage (#PCDATA)>
+        <!ELEMENT nom (#PCDATA)>
+        <!ELEMENT acces (#PCDATA)>
+        <!ELEMENT parkings (parking+)>
+        	<!ELEMENT parking (#PCDATA)>
+        <!ELEMENT type_parcours (#PCDATA)>
+        <!ELEMENT types_chemin (type_chemin+)>
+        	<!ELEMENT type_chemin (#PCDATA)>
+        <!ELEMENT types_terrain (type_terrain+)>
+        	<!ELEMENT type_terrain (#PCDATA)>
+        <!ELEMENT liste_materiel (materiel+)>
+        	<!ELEMENT materiel (#PCDATA)>
