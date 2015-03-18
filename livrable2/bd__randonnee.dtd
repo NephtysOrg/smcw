@@ -23,5 +23,5 @@
 			<!ELEMENT lieu (#PCDATA)>
 			<!ATTLIST lieu 
 			type (voie_routiere|voie_fluviale|lieu_dit|batiment|ville) #REQUIRED
-			coord NMTOKEN #REQUIRED
+			coord CDATA #REQUIRED
 			>

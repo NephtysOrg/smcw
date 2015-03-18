@@ -13,6 +13,7 @@
         <xsl:text>\documentclass{article}&#10;</xsl:text>
         <xsl:text>\usepackage[utf8]{inputenc}&#10;</xsl:text>
         <xsl:text>\usepackage[francais]{babel}&#10;</xsl:text>
+        <xsl:text>\usepackage{hyperref}</xsl:text>
         <xsl:text>\usepackage{xcolor}&#10;</xsl:text>
         <xsl:text>\newcommand\ytl[2]{
 \parbox[b]{8em}{\hfill{\color{cyan}\bfseries\sffamily #1}~$\cdots\cdots$~}\makebox[0pt][c]{$\bullet$}\vrule\quad \parbox[c]{4.5cm}{\vspace{7pt}\color{red!40!black!80}\raggedright\sffamily #2.\\[7pt]}\\[-3pt]}&#10;</xsl:text>
@@ -74,6 +75,8 @@
     
     <xsl:template match="lieu">
         <xsl:value-of select="."/>
+        <xsl:text> </xsl:text>
+        \href{https://www.google.com/maps/?q=<xsl:value-of select="@coord"/>}{(Voir sur map)}
         <xsl:choose>
             <xsl:when test="position()=last()">
                 <xsl:text>}\\~\\&#10;</xsl:text>

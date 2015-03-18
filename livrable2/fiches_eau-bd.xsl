@@ -24,23 +24,61 @@
                 <xsl:matching-substring>
                     <difficulte><xsl:value-of select="regex-group(1)"/></difficulte>
                 </xsl:matching-substring>
-                <xsl:non-matching-substring>
-                    <difficulte>
-                        <xsl:text>INCONNUE</xsl:text>
-                    </difficulte>
-                </xsl:non-matching-substring>
             </xsl:analyze-string>
             <xsl:copy-of select="epoque"/>
             <xsl:element name="taille">
                 <xsl:attribute name="denivele">
+                    <xsl:value-of select="denivele/valeur"></xsl:value-of>
+                </xsl:attribute>
+                <xsl:attribute name="longueur">
+                    <xsl:value-of select="longueur/valeur"></xsl:value-of>
+                </xsl:attribute>
+                <xsl:attribute name="unite">
+                    <xsl:value-of select="denivele/unite"></xsl:value-of>
+                </xsl:attribute>
+            </xsl:element>
+            <xsl:element name="altitude">
+                <xsl:attribute name="depart">
+                    <xsl:value-of select="alt_dep/valeur"></xsl:value-of>
+                </xsl:attribute>
+                <xsl:attribute name="arrive">
+                    <xsl:value-of select="alt_arr/valeur"></xsl:value-of>
+                </xsl:attribute>
+                <xsl:attribute name="maximale">
+                    <xsl:value-of select="alt_max/valeur"></xsl:value-of>
+                </xsl:attribute>
+            </xsl:element>
+            <xsl:element name="horaire">
+                <xsl:attribute name="heure">
+                    <xsl:value-of select="horaire/heure"></xsl:value-of>
+                </xsl:attribute>
+                <xsl:attribute name="minute">
+                    <xsl:value-of select="horaire/minute"></xsl:value-of>
+                </xsl:attribute>
+                <xsl:attribute name="seconde">
+                    <xsl:value-of select="horaire/seconde"></xsl:value-of>
+                </xsl:attribute>
+            </xsl:element>
+            <xsl:element name="depart">
+                <xsl:attribute name="lieu">
+                    <xsl:value-of select="lieu_dep"></xsl:value-of>
+                </xsl:attribute>
+                <xsl:attribute name="commune">
+                    <xsl:value-of select="commune_dep"></xsl:value-of>
+                </xsl:attribute>
+            </xsl:element>
+            <xsl:element name="arrivee">
+                <xsl:attribute name="lieu">
+                    <xsl:value-of select="lieu_arr"></xsl:value-of>
+                </xsl:attribute>
+                <xsl:attribute name="commune">
+                    <xsl:value-of select="commune_arr"></xsl:value-of>
                 </xsl:attribute>
             </xsl:element>
         </fiche_technique>
     </xsl:template>
     
     <xsl:template match="fiche_information">
-        <fiche_information>
-
-        </fiche_information>
+        <xsl:copy-of select="."/>
     </xsl:template>
 </xsl:stylesheet>
