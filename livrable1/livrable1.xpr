@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="16.1">
+    <meta>
+        <filters directoryPatterns="" filePatterns="" positiveFilePatterns="" showHiddenFiles="false"/>
+        <options>
+            <serialized version="16.1" xml:space="preserve">
+                <serializableOrderedMap>
+                    <entry>
+                        <String>enable.project.master.files.support</String>
+                        <Boolean>true</Boolean>
+                    </entry>
+                </serializableOrderedMap>
+            </serialized>
+        </options>
+    </meta>
+    <projectTree name="livrable1.xpr">
+        <folder masterFiles="true" name="Master Files">
+            <folder name="fiches">
+                <file name="bd__fiches.dtd"/>
+                <file name="bd__fiches.xml"/>
+                <file name="fil_eau__fiches.dtd"/>
+                <file name="fil_eau__fiches.xml"/>
+            </folder>
+            <folder name="hierarchie">
+                <file name="bd__hierarchie.dtd"/>
+                <file name="bd__hierarchie.xml"/>
+                <file name="fil_eau__hierarchie.dtd"/>
+                <file name="fil_eau__hierarchie.xml"/>
+            </folder>
+            <folder name="randonnee">
+                <file name="bd__randonnee.dtd"/>
+                <file name="bd__randonnee.xml"/>
+                <file name="fil_eau__randonnee.dtd"/>
+                <file name="fil_eau__randonnee.xml"/>
+            </folder>
+        </folder>
+    </projectTree>
+</project>
