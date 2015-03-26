@@ -9,8 +9,7 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <!-- element FICHE TECHNIQUE //////////////////////// -->
-  <!--  une fiche doit impérativement contenir les balises entre () -->
+  <!-- // element FICHE TECHNIQUE //////////////////////// -->
   <xs:element name="fiche_technique">
     <xs:complexType>
       <xs:sequence>
@@ -26,9 +25,24 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <!-- //element information //////////////////////// -->
   <xs:element name="information" type="xs:string"/>
+  
+  <!-- // element recommandations //////////////////////// -->
   <xs:element name="recommandations" type="xs:string"/>
-  <xs:element name="difficulte" type="xs:string"/>
+  
+  <!-- // element difficulte //////////////////////// -->
+  <xs:element name="difficulte">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="FACILE"/>
+        <xs:enumeration value="MOYEN"/>
+        <xs:enumeration value="DIFFICILE"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  
+  <!-- // element epoque //////////////////////// -->
   <xs:element name="epoque">
     <xs:complexType>
       <xs:sequence>
@@ -36,6 +50,7 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <!-- // element saison //////////////////////// -->
   <xs:element name="saison">
     <xs:simpleType>
       <xs:restriction base="xs:token">
@@ -46,14 +61,19 @@
       </xs:restriction>
     </xs:simpleType>
   </xs:element>
+  
+  <!-- // element taille //////////////////////// -->
   <xs:element name="taille">
     <xs:complexType>
       <xs:attributeGroup ref="attlist.taille"/>
     </xs:complexType>
   </xs:element>
   <xs:attributeGroup name="attlist.taille">
-    <xs:attribute name="denivele" use="required"/>
-    <xs:attribute name="longueur" use="required"/>
+    <!-- element denivele -->
+    <xs:attribute name="denivele" use="required" type="xs:unsignedInt" />
+    <!-- element denivele -->
+    <xs:attribute name="longueur" use="required" type="xs:unsignedInt" />
+    <!-- element unite -->
     <xs:attribute name="unite" use="required">
       <xs:simpleType>
         <xs:restriction base="xs:token">
@@ -63,15 +83,21 @@
       </xs:simpleType>
     </xs:attribute>
   </xs:attributeGroup>
+  <!-- // element altitude //////////////////////// -->
   <xs:element name="altitude">
     <xs:complexType>
       <xs:attributeGroup ref="attlist.altitude"/>
     </xs:complexType>
   </xs:element>
+  
   <xs:attributeGroup name="attlist.altitude">
-    <xs:attribute name="depart" use="required"/>
-    <xs:attribute name="arrive" use="required"/>
-    <xs:attribute name="maximale" use="required"/>
+    <!-- element depart -->
+    <xs:attribute name="depart" use="required" type="xs:unsignedInt" />
+    <!-- element arrive -->
+    <xs:attribute name="arrive" use="required" type="xs:unsignedInt" />
+    <!-- element maximale -->
+    <xs:attribute name="maximale" use="required" type="xs:unsignedInt" />
+    <!-- element unite -->
     <xs:attribute name="unite" use="required">
       <xs:simpleType>
         <xs:restriction base="xs:token">
@@ -81,33 +107,67 @@
       </xs:simpleType>
     </xs:attribute>
   </xs:attributeGroup>
+  
+  <!-- // element horaire //////////////////////// -->
   <xs:element name="horaire">
     <xs:complexType>
       <xs:attributeGroup ref="attlist.horaire"/>
     </xs:complexType>
   </xs:element>
+  
   <xs:attributeGroup name="attlist.horaire">
-    <xs:attribute name="heure" use="required"/>
-    <xs:attribute name="minute" use="required"/>
-    <xs:attribute name="seconde" use="required"/>
+    <!-- element heure -->
+    <xs:attribute name="heure" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:integer">
+          <xs:minInclusive value="0" />
+          <xs:maxInclusive value="72" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <!-- element minute -->
+    <xs:attribute name="minute" use="required" >
+      <xs:simpleType>
+        <xs:restriction base="xs:integer">
+          <xs:minInclusive value="0" />
+          <xs:maxInclusive value="59" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <!-- element seconde -->
+    <xs:attribute name="seconde" use="required" >
+      <xs:simpleType>
+        <xs:restriction base="xs:integer">
+          <xs:minInclusive value="0" />
+          <xs:maxInclusive value="59" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
   </xs:attributeGroup>
+  
+  <!-- // element depart //////////////////////// -->
   <xs:element name="depart">
     <xs:complexType>
       <xs:attributeGroup ref="attlist.depart"/>
     </xs:complexType>
   </xs:element>
   <xs:attributeGroup name="attlist.depart">
-    <xs:attribute name="lieu" use="required"/>
-    <xs:attribute name="commune" use="required"/>
+    <!-- element lieu -->
+    <xs:attribute name="lieu" use="required" type="xs:string" />
+    <!-- element commune -->
+    <xs:attribute name="commune" use="required" type="xs:string" />
   </xs:attributeGroup>
+  <!-- // element arrivee //////////////////////// -->
   <xs:element name="arrivee">
     <xs:complexType>
       <xs:attributeGroup ref="attlist.arrivee"/>
     </xs:complexType>
   </xs:element>
   <xs:attributeGroup name="attlist.arrivee">
-    <xs:attribute name="lieu" use="required"/>
-    <xs:attribute name="commune" use="required"/>
+    <!-- element lieu -->
+    <xs:attribute name="lieu" use="required" type="xs:string" />
+    <!-- element commune -->
+    <xs:attribute name="commune" use="required" type="xs:string" />
   </xs:attributeGroup>
   <!-- element FICHE INFORMATION //////////////////////// -->
   <xs:element name="fiche_information">
@@ -125,17 +185,30 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <!-- //element information //////////////////////// -->
   <xs:element name="cartes">
     <xs:complexType>
       <xs:sequence>
-        <xs:element maxOccurs="unbounded" ref="carte"/>
+        <xs:element minOccurs="1" maxOccurs="unbounded" ref="carte"/>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <!-- element carte -->
   <xs:element name="carte" type="xs:string"/>
-  <xs:element name="carroyage" type="xs:string"/>
+  <!-- //element carroyage //////////////////////// -->
+  <xs:element name="carroyage" type="xs:string" />
+  <!--<xs:simpleType>
+    <xs:restriction base="xs:token">
+      <xs:pattern value="([0-9]{4}[A-Z]{2})" />
+    </xs:restriction>
+  </xs:simpleType>
+  </xs:element>-->
+  <!-- //element nom //////////////////////// -->
   <xs:element name="nom" type="xs:string"/>
+  <!-- //element acces //////////////////////// -->
   <xs:element name="acces" type="xs:string"/>
+  
+  <!-- //element parkings //////////////////////// -->
   <xs:element name="parkings">
     <xs:complexType>
       <xs:sequence>
@@ -143,16 +216,40 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <!-- element parking -->
   <xs:element name="parking" type="xs:string"/>
-  <xs:element name="type_parcours" type="xs:string"/>
+  
+  <!-- //element type_parcours //////////////////////// -->
+  <xs:element name="type_parcours">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="BOUCLE"/>
+        <xs:enumeration value="TRAVERSEE"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  
+  <!-- //element types_chemin //////////////////////// -->
   <xs:element name="types_chemin">
     <xs:complexType>
       <xs:sequence>
-        <xs:element maxOccurs="unbounded" ref="type_chemin"/>
+        <xs:element minOccurs="1" maxOccurs="unbounded" ref="type_chemin"/>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="type_chemin" type="xs:string"/>
+  <!-- element type_chemin -->
+  <xs:element name="type_chemin">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="CHEMIN GOUDRONNE"/>
+        <xs:enumeration value="SENTIER BALISE"/>
+        <xs:enumeration value="CHEMIN DE TERRE"/>
+        <xs:enumeration value="SENTIER CAIRNE"/>
+        <xs:enumeration value="HORS SENTIER"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <!-- //element types_terrain //////////////////////// -->
   <xs:element name="types_terrain">
     <xs:complexType>
       <xs:sequence>
@@ -160,7 +257,18 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="type_terrain" type="xs:string"/>
+  <!-- element type_terrain -->
+  <xs:element name="type_terrain">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="ZONE AGRICOLE" />
+        <xs:enumeration value="EBOULIS" />
+        <xs:enumeration value="PENTE D HERBE" />
+        <xs:enumeration value="ZONE URBAINE" />
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <!-- //element liste_materiel //////////////////////// -->
   <xs:element name="liste_materiel">
     <xs:complexType>
       <xs:sequence>
