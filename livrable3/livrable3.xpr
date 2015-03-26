@@ -326,7 +326,7 @@
             </serialized>
         </options>
     </meta>
-    <projectTree name="livrable2.xpr">
+    <projectTree name="livrable3.xpr">
         <folder masterFiles="true" name="Master Files">
             <folder name="fiches">
                 <file name="bd__fiches.dtd"/>
@@ -343,6 +343,7 @@
             <folder name="randonnee">
                 <file name="bd__randonnee.dtd"/>
                 <file name="bd__randonnee.xml"/>
+                <file name="../../../../../../MEGA/shared/smcw/projet/sources/livrable3/bd__randonnee.xsd"/>
                 <file name="fil_eau__randonnee.dtd"/>
                 <file name="fil_eau__randonnee.xml"/>
             </folder>
