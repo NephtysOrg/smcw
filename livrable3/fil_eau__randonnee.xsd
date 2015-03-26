@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Auteur : Charles Follet -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="randonnee">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="unbounded" ref="etape"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <!--  une étape doit impérativement contenir les balises entre () -->
+  <xs:element name="etape">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="num_etape"/>
+        <xs:element ref="libelle"/>
+        <xs:element ref="distance"/>
+        <xs:element ref="temps"/>
+        <xs:element ref="description"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <!--  un entier > 0, unique (pour XMLschema) -->
+  <xs:element name="num_etape" >
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:minInclusive value="1"/>
+        <xs:maxInclusive value="20"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <!--  une chaine de carractère, unique (pour XMLschema) -->
+  <xs:element name="libelle" type="xs:string"/>
+  <xs:element name="distance">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="valeur"/>
+        <xs:element ref="unite"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <!--  un entier > 0 (pour XMLschema) -->
+  <xs:element name="valeur" type="xs:string"/>
+  <!--  {m, km, ...} (pour XMLschema) -->
+  <xs:element name="unite" type="xs:string"/>
+  <xs:element name="temps">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="heure"/>
+        <xs:element ref="minute"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <!--  0<= t <24 (pour XMLschema) -->
+  <xs:element name="heure" type="xs:string"/>
+  <!--  0<= t <60 (pour XMLschema) -->
+  <xs:element name="minute" type="xs:string"/>
+  <xs:element name="description">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="voie_routiere"/>
+        <xs:element ref="voie_fluviale"/>
+        <xs:element ref="lieu_dit"/>
+        <xs:element ref="batiment"/>
+        <xs:element ref="ville"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="voie_routiere" type="xs:string"/>
+  <xs:element name="voie_fluviale" type="xs:string"/>
+  <xs:element name="lieu_dit" type="xs:string"/>
+  <xs:element name="batiment" type="xs:string"/>
+  <xs:element name="ville" type="xs:string"/>
+</xs:schema>

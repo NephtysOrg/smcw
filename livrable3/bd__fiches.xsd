@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Auteur : Roland Bary -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="fiches">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="fiche_technique"/>
+        <xs:element ref="fiche_information"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <!-- element FICHE TECHNIQUE //////////////////////// -->
+  <!--  une fiche doit impérativement contenir les balises entre () -->
+  <xs:element name="fiche_technique">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="information"/>
+        <xs:element ref="recommandations"/>
+        <xs:element ref="difficulte"/>
+        <xs:element ref="epoque"/>
+        <xs:element ref="taille"/>
+        <xs:element ref="altitude"/>
+        <xs:element ref="horaire"/>
+        <xs:element ref="depart"/>
+        <xs:element ref="arrivee"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="information" type="xs:string"/>
+  <xs:element name="recommandations" type="xs:string"/>
+  <xs:element name="difficulte" type="xs:string"/>
+  <xs:element name="epoque">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="4" ref="saison"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="saison">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="ETE" />
+        <xs:enumeration value="HIVER"/>
+        <xs:enumeration value="PRINTEMPS"/>
+        <xs:enumeration value="AUTOMNE"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="taille">
+    <xs:complexType>
+      <xs:attributeGroup ref="attlist.taille"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.taille">
+    <xs:attribute name="denivele" use="required"/>
+    <xs:attribute name="longueur" use="required"/>
+    <xs:attribute name="unite" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="m"/>
+          <xs:enumeration value="km"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:element name="altitude">
+    <xs:complexType>
+      <xs:attributeGroup ref="attlist.altitude"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.altitude">
+    <xs:attribute name="depart" use="required"/>
+    <xs:attribute name="arrive" use="required"/>
+    <xs:attribute name="maximale" use="required"/>
+    <xs:attribute name="unite" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="m"/>
+          <xs:enumeration value="km"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:element name="horaire">
+    <xs:complexType>
+      <xs:attributeGroup ref="attlist.horaire"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.horaire">
+    <xs:attribute name="heure" use="required"/>
+    <xs:attribute name="minute" use="required"/>
+    <xs:attribute name="seconde" use="required"/>
+  </xs:attributeGroup>
+  <xs:element name="depart">
+    <xs:complexType>
+      <xs:attributeGroup ref="attlist.depart"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.depart">
+    <xs:attribute name="lieu" use="required"/>
+    <xs:attribute name="commune" use="required"/>
+  </xs:attributeGroup>
+  <xs:element name="arrivee">
+    <xs:complexType>
+      <xs:attributeGroup ref="attlist.arrivee"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.arrivee">
+    <xs:attribute name="lieu" use="required"/>
+    <xs:attribute name="commune" use="required"/>
+  </xs:attributeGroup>
+  <!-- element FICHE INFORMATION //////////////////////// -->
+  <xs:element name="fiche_information">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="cartes"/>
+        <xs:element ref="carroyage"/>
+        <xs:element ref="nom"/>
+        <xs:element ref="acces"/>
+        <xs:element ref="parkings"/>
+        <xs:element ref="type_parcours"/>
+        <xs:element ref="types_chemin"/>
+        <xs:element ref="types_terrain"/>
+        <xs:element ref="liste_materiel"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cartes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="carte"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="carte" type="xs:string"/>
+  <xs:element name="carroyage" type="xs:string"/>
+  <xs:element name="nom" type="xs:string"/>
+  <xs:element name="acces" type="xs:string"/>
+  <xs:element name="parkings">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="parking"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="parking" type="xs:string"/>
+  <xs:element name="type_parcours" type="xs:string"/>
+  <xs:element name="types_chemin">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="type_chemin"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="type_chemin" type="xs:string"/>
+  <xs:element name="types_terrain">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="type_terrain"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="type_terrain" type="xs:string"/>
+  <xs:element name="liste_materiel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="materiel"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="materiel" type="xs:string"/>
+</xs:schema>

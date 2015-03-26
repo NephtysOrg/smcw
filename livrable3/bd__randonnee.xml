@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Auteur : Charles Follet -->
 
-<!DOCTYPE randonnee SYSTEM "bd__randonnee.dtd">
-
-<randonnee>
+<randonnee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="bd__randonnee.xsd">
     <etape numero="1" libelle="Avenue Joliot-Curie">
         <distance valeur="1220" unite="m"/>
         <temps heure="00" minute="15"/>
@@ -45,9 +44,6 @@
             <lieu type="batiment" coord="43.287530, -0.391115">ferme Larrau</lieu>
         </lieux>
     </etape>
-    
-    
-    
     
     <etape numero ="4" libelle="Le Clos Lapeyre">
         <distance valeur="2430" unite="m"/>  

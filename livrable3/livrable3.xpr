@@ -346,6 +346,7 @@
                 <file name="../../../../../../MEGA/shared/smcw/projet/sources/livrable3/bd__randonnee.xsd"/>
                 <file name="fil_eau__randonnee.dtd"/>
                 <file name="fil_eau__randonnee.xml"/>
+                <file name="../../../../../../MEGA/shared/smcw/projet/sources/livrable3/fil_eau__randonnee.xsd"/>
             </folder>
             <folder name="transformations">
                 <folder name="bd-tex">
