@@ -6,7 +6,6 @@
     <!ELEMENT etape (num_etape|libelle|distance|temps|description)*>
         <!-- un entier > 0, unique (pour XMLschema)-->
         <!ELEMENT num_etape (#PCDATA)>
-        <!-- une chaine de carractère, unique (pour XMLschema)-->
         <!ELEMENT libelle (#PCDATA)>
         <!ELEMENT distance (valeur|unite)*>
             <!-- un entier > 0 (pour XMLschema)-->

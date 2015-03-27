@@ -3,7 +3,8 @@
 
 <!DOCTYPE randonnee SYSTEM "fil_eau__randonnee.dtd">
 
-<randonnee>
+<randonnee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="fil_eau__randonnee.xsd">
     <etape>
         <num_etape>1</num_etape><libelle>Avenue Joliot-Curie</libelle>
         <distance><valeur>1220</valeur> <unite>m</unite></distance><temps><heure>00</heure><minute>15</minute></temps>
