@@ -333,6 +333,7 @@
                 <file name="bd__fiches.xml"/>
                 <file name="fil_eau__fiches.dtd"/>
                 <file name="fil_eau__fiches.xml"/>
+                <file name="../../../../../../MEGA/shared/smcw/projet/sources/livrable3/fil_eau__fiches.xsd"/>
             </folder>
             <folder name="hierarchie">
                 <file name="bd__hierarchie.dtd"/>

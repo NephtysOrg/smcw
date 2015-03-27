@@ -29,7 +29,6 @@
       </xs:restriction>
     </xs:simpleType>
   </xs:element>
-  <!--  une chaine de carractère, unique (pour XMLschema) -->
   <xs:element name="libelle" type="xs:string"/>
   <xs:element name="distance">
     <xs:complexType>
@@ -40,21 +39,48 @@
     </xs:complexType>
   </xs:element>
   <!--  un entier > 0 (pour XMLschema) -->
-  <xs:element name="valeur" type="xs:string"/>
+  <xs:element name="valeur">
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:minExclusive value="0"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
   <!--  {m, km, ...} (pour XMLschema) -->
-  <xs:element name="unite" type="xs:string"/>
+  <xs:element name="unite">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="m"/>
+        <xs:enumeration value="km"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
   <xs:element name="temps">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element ref="heure"/>
+        <xs:element ref="heure" />
         <xs:element ref="minute"/>
       </xs:choice>
     </xs:complexType>
   </xs:element>
   <!--  0<= t <24 (pour XMLschema) -->
-  <xs:element name="heure" type="xs:string"/>
+  <xs:element name="heure">
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:minInclusive value="0"/>
+        <xs:maxInclusive value="72"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
   <!--  0<= t <60 (pour XMLschema) -->
-  <xs:element name="minute" type="xs:string"/>
+  <xs:element name="minute">
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:minInclusive value="0"/>
+        <xs:maxInclusive value="59"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
   <xs:element name="description">
     <xs:complexType mixed="true">
       <xs:choice minOccurs="0" maxOccurs="unbounded">
