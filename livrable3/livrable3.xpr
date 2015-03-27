@@ -331,6 +331,7 @@
             <folder name="fiches">
                 <file name="bd__fiches.dtd"/>
                 <file name="bd__fiches.xml"/>
+                <file name="bd__fiches.xsd"/>
                 <file name="fil_eau__fiches.dtd"/>
                 <file name="fil_eau__fiches.xml"/>
                 <file name="../../../../../../MEGA/shared/smcw/projet/sources/livrable3/fil_eau__fiches.xsd"/>
