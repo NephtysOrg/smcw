@@ -322,6 +322,74 @@
                             </scenario>
                         </scenario-array>
                     </entry>
+                    <entry>
+                        <String>validation.scenario.associations</String>
+                        <scenarioAssociation-array>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>global.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>global</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>Validation_scenario</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                        </scenarioAssociation-array>
+                    </entry>
+                    <entry>
+                        <String>validation.scenarios</String>
+                        <validationScenario-array>
+                            <validationScenario>
+                                <field name="pairs">
+                                    <list>
+                                        <validationUnit>
+                                            <field name="validationType">
+                                                <validationUnitType>
+                                                    <field name="validationInputType">
+                                                        <String>text/xml</String>
+                                                    </field>
+                                                </validationUnitType>
+                                            </field>
+                                            <field name="url">
+                                                <String>${currentFileURL}</String>
+                                            </field>
+                                            <field name="validationEngine">
+                                                <validationEngine>
+                                                    <field name="engineType">
+                                                        <String>Saxon-EE</String>
+                                                    </field>
+                                                    <field name="allowsAutomaticValidation">
+                                                        <Boolean>true</Boolean>
+                                                    </field>
+                                                </validationEngine>
+                                            </field>
+                                            <field name="allowAutomaticValidation">
+                                                <Boolean>true</Boolean>
+                                            </field>
+                                            <field name="extensions">
+                                                <null/>
+                                            </field>
+                                            <field name="validationSchema">
+                                                <null/>
+                                            </field>
+                                        </validationUnit>
+                                    </list>
+                                </field>
+                                <field name="type">
+                                    <String>Validation_scenario</String>
+                                </field>
+                                <field name="name">
+                                    <String>global</String>
+                                </field>
+                            </validationScenario>
+                        </validationScenario-array>
+                    </entry>
                 </serializableOrderedMap>
             </serialized>
         </options>
@@ -334,21 +402,22 @@
                 <file name="bd__fiches.xsd"/>
                 <file name="fil_eau__fiches.dtd"/>
                 <file name="fil_eau__fiches.xml"/>
-                <file name="../../../../../../MEGA/shared/smcw/projet/sources/livrable3/fil_eau__fiches.xsd"/>
+                <file name="fil_eau__fiches.xsd"/>
             </folder>
             <folder name="hierarchie">
                 <file name="bd__hierarchie.dtd"/>
                 <file name="bd__hierarchie.xml"/>
+                <file name="bd__hierarchie.xsd"/>
                 <file name="fil_eau__hierarchie.dtd"/>
                 <file name="fil_eau__hierarchie.xml"/>
             </folder>
             <folder name="randonnee">
                 <file name="bd__randonnee.dtd"/>
                 <file name="bd__randonnee.xml"/>
-                <file name="../../../../../../MEGA/shared/smcw/projet/sources/livrable3/bd__randonnee.xsd"/>
+                <file name="bd__randonnee.xsd"/>
                 <file name="fil_eau__randonnee.dtd"/>
                 <file name="fil_eau__randonnee.xml"/>
-                <file name="../../../../../../MEGA/shared/smcw/projet/sources/livrable3/fil_eau__randonnee.xsd"/>
+                <file name="fil_eau__randonnee.xsd"/>
             </folder>
             <folder name="transformations">
                 <folder name="bd-tex">
