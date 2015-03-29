@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Auteur: Roland Bary -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="hierarchie">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="document"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="document">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="section_preambule"/>
+        <xs:element ref="section_description"/>
+        <xs:element ref="section_thematique"/>
+        <xs:element ref="section_synthese"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="section_preambule">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="titre"/>
+        <xs:element ref="intitule"/>
+        <xs:element maxOccurs="unbounded" ref="paragraphe"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="intitule" type="xs:string"/>
+  
+  <xs:element name="section_description">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="titre"/>
+        <xs:element maxOccurs="unbounded" ref="sous_section"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="sous_section">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="sous_titre"/>
+        <xs:element ref="paragraphe"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="section_thematique">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="thematique"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="thematique">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="titre"/>
+        <xs:element ref="paragraphe"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="section_synthese">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="synthese"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="synthese">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="sous_titre"/>
+        <xs:element ref="liste"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="liste">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="item"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="item">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="label"/>
+        <xs:element ref="descriptif"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="label" type="xs:string" />
+  
+  <!--<xs:element name="label">
+   <xs:simpleType>
+     <xs:restriction base="xs:token" >
+       <xs:pattern value="([A-Z]*)\s[:]"/>
+     </xs:restriction>
+   </xs:simpleType>
+  </xs:element>-->
+ 
+  <xs:element name="descriptif" type="xs:string"/>
+  
+  <!--<xs:element name="titre" >
+  <xs:simpleType>
+    <xs:restriction base="xs:token" >
+      <xs:pattern value="^[A-Z]+"/>
+    </xs:restriction>
+  </xs:simpleType>
+  </xs:element>-->
+  
+  <xs:element name="titre" type="xs:string"/>
+  
+  <xs:element name="paragraphe" type="xs:string"/>
+  
+  <xs:element name="sous_titre" type="xs:string"/>
+</xs:schema>

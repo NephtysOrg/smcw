@@ -2,15 +2,21 @@
 <!-- Fichier fil_eau__hierarchie.dtd -->
 <!-- Besoin exprime : hierarchie du document -->
 <!-- Auteur: Roland Bary -->
+<!ELEMENT hierarchie (document)+ >
+<!ELEMENT document (section_preambule,section_description,section_thematique?,section_synthese) >
+<!ELEMENT section_preambule (titre,intitule,paragraphe+) >
+<!ELEMENT section_description (titre,sous_section+) >
+<!ELEMENT section_thematique (thematique)+ >
+<!ELEMENT section_synthese (synthese)+ >
+<!ELEMENT titre (#PCDATA) >
+<!ELEMENT intitule (#PCDATA) >
+<!ELEMENT paragraphe (#PCDATA) >
+<!ELEMENT sous_section (sous_titre,paragraphe)+ >
+<!ELEMENT thematique (titre,paragraphe+)>
+<!ELEMENT synthese (sous_titre,liste)>
+<!ELEMENT sous_titre (#PCDATA)>
+<!ELEMENT liste (item+) >
+<!ELEMENT item (label, descriptif) >
+<!ELEMENT label (#PCDATA) >
+<!ELEMENT descriptif (#PCDATA) >
 
-<!ELEMENT hierarchie (section+)>
-    <!ELEMENT section ((titre,intitule,paragraphe+)|(titre,sous_section+)|(titre,paragraphe+)?|(sous_section+)) >
-    <!ELEMENT titre (#PCDATA) >
-    <!ELEMENT sous_titre (#PCDATA) >
-    <!ELEMENT intitule (#PCDATA) >
-    <!ELEMENT paragraphe (#PCDATA) >
-    <!ELEMENT sous_section ((sous_titre,paragraphe+)|(sous_titre,liste)) >
-    <!ELEMENT liste (item+) >
-    <!ELEMENT item (label,descriptif)>
-    <!ELEMENT descriptif (#PCDATA) >
-    <!ELEMENT label (#PCDATA) >
