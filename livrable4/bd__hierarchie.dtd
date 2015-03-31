@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Fichier bd__hierarchie.dtd -->
+<!-- Besoin exprime : hierarchie du document -->
+<!-- Auteur: Roland Bary -->
+
+<!ELEMENT hierarchie (document)+>
+
+<!ELEMENT document (section_preambule,section_description,section_thematique?,section_synthese) >
+<!ATTLIST document id NMTOKEN #REQUIRED >
+<!ELEMENT section_preambule (titre,intitule,paragraphe+) >
+<!ELEMENT section_description (titre,sous_section+) >
+<!ELEMENT section_thematique (thematique)+ >
+<!ELEMENT thematique (titre,paragraphe+) >
+<!ATTLIST thematique id NMTOKEN #REQUIRED
+          type (culturelle) #REQUIRED > 
+<!ELEMENT section_synthese (synthese)+ >
+<!ELEMENT titre (#PCDATA) >
+<!ELEMENT intitule (#PCDATA) >
+<!ELEMENT paragraphe (#PCDATA) >
+<!ELEMENT sous_section (sous_titre,paragraphe)+ >
+    <!ATTLIST sous_section
+        id NMTOKEN #REQUIRED
+    >
+<!ELEMENT synthese (sous_titre,liste)>
+    <!ATTLIST synthese
+        id NMTOKEN #REQUIRED
+        type (technique | information) #REQUIRED
+    > 
+<!ELEMENT sous_titre (#PCDATA) >
+<!ELEMENT liste (item+) >
+<!ELEMENT item (label,descriptif)>
+    <!ATTLIST item
+        id NMTOKEN #REQUIRED
+    >
+<!ELEMENT label (#PCDATA) >
+<!ELEMENT descriptif (#PCDATA) >

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Auteur: Roland Bary -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="fiches">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="fiche_technique"/>
+        <xs:element ref="fiche_information"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <!--  une fiche doit impérativement contenir les balises entre () -->
+  <xs:element name="fiche_technique">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="information"/>
+        <xs:element ref="recommandations"/>
+        <xs:element ref="difficulte"/>
+        <xs:element ref="epoque"/>
+        <xs:element ref="denivele"/>
+        <xs:element ref="longueur"/>
+        <xs:element ref="alt_dep"/>
+        <xs:element ref="alt_arr"/>
+        <xs:element ref="alt_max"/>
+        <xs:element ref="horaire"/>
+        <xs:element ref="lieu_dep"/>
+        <xs:element ref="lieu_arr"/>
+        <xs:element ref="commune_dep"/>
+        <xs:element ref="commune_arr"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="information" type="xs:string"/>
+  <xs:element name="recommandations" type="xs:string"/>
+  <xs:element name="difficulte" type="xs:string"/>
+  <xs:element name="epoque">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="saison"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="saison" type="xs:string"/>
+  <xs:element name="valeur" type="xs:string"/>
+  <xs:element name="unite" type="xs:string"/>
+  <xs:element name="denivele">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="valeur"/>
+        <xs:element ref="unite"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="longueur">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="valeur"/>
+        <xs:element ref="unite"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="alt_dep">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="valeur"/>
+        <xs:element ref="unite"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="alt_arr">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="valeur"/>
+        <xs:element ref="unite"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="alt_max">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="valeur"/>
+        <xs:element ref="unite"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="horaire">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="heure"/>
+        <xs:element ref="minute"/>
+        <xs:element ref="seconde"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="heure" type="xs:string"/>
+  <xs:element name="minute" type="xs:string"/>
+  <xs:element name="seconde" type="xs:string"/>
+  <xs:element name="lieu_dep" type="xs:string"/>
+  <xs:element name="lieu_arr" type="xs:string"/>
+  <xs:element name="commune_dep" type="xs:string"/>
+  <xs:element name="commune_arr" type="xs:string"/>
+  <xs:element name="fiche_information">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="cartes"/>
+        <xs:element ref="carroyage"/>
+        <xs:element ref="nom"/>
+        <xs:element ref="acces"/>
+        <xs:element ref="parkings"/>
+        <xs:element ref="type_parcours"/>
+        <xs:element ref="types_chemin"/>
+        <xs:element ref="types_terrain"/>
+        <xs:element ref="liste_materiel"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cartes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="carte"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="carte" type="xs:string"/>
+  <xs:element name="carroyage" type="xs:string"/>
+  <xs:element name="nom" type="xs:string"/>
+  <xs:element name="acces" type="xs:string"/>
+  <xs:element name="parkings">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="parking"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="parking" type="xs:string"/>
+  <xs:element name="type_parcours" type="xs:string"/>
+  <xs:element name="types_chemin">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="type_chemin"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="type_chemin" type="xs:string"/>
+  <xs:element name="types_terrain">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="type_terrain"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="type_terrain" type="xs:string"/>
+  <xs:element name="liste_materiel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="materiel"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="materiel" type="xs:string"/>
+</xs:schema>
