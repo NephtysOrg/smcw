@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Fichier fil_eau__hierarchie.dtd -->
+<!-- Besoin exprime : hierarchie du document -->
+<!-- Auteur: Roland Bary -->
+
+<!ELEMENT hierarchie (section+)>
+    <!ELEMENT section ((titre,intitule,paragraphe+)|(titre,sous_section+)|(titre,paragraphe+)?|(sous_section+)) >
+    <!ELEMENT titre (#PCDATA) >
+    <!ELEMENT sous_titre (#PCDATA) >
+    <!ELEMENT intitule (#PCDATA) >
+    <!ELEMENT paragraphe (#PCDATA) >
+    <!ELEMENT sous_section ((sous_titre,paragraphe+)|(sous_titre,liste)) >
+    <!ELEMENT liste (item+) >
+    <!ELEMENT item (label,descriptif)>
+    <!ELEMENT descriptif (#PCDATA) >
+    <!ELEMENT label (#PCDATA) >
