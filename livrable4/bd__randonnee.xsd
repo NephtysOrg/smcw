@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Auteur : Charles Follet -->
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1">
+  <xs:include schemaLocation="librairie.xsd"/>
   <xs:element name="randonnee">
     <xs:complexType>
       <xs:sequence>
@@ -8,7 +10,6 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <!--  une étape doit impérativement contenir les balises entre () -->
   <xs:element name="etape">
     <xs:complexType>
       <xs:sequence>
@@ -16,21 +17,13 @@
         <xs:element ref="temps"/>
         <xs:element ref="description"/>
         <xs:element minOccurs="0" ref="lieux"/>
-        <!-- Une étape peut ne pas avoir de lieu remarquable -->
       </xs:sequence>
       <xs:attributeGroup ref="attlist.etape"/>
     </xs:complexType>
 
   </xs:element>
   <xs:attributeGroup name="attlist.etape">
-    <xs:attribute name="numero" use="required">
-      <xs:simpleType>
-        <xs:restriction base="xs:integer">
-          <xs:minInclusive value="1"/>
-          <xs:maxInclusive value="20"/>
-        </xs:restriction>
-      </xs:simpleType>
-    </xs:attribute>
+    <xs:attribute name="numero" use="required" type="xs:positiveInteger"/>
     <xs:attribute name="libelle" use="required" type="xs:string"/>
   </xs:attributeGroup>
   <xs:element name="distance">
@@ -39,46 +32,17 @@
     </xs:complexType>
   </xs:element>
   <xs:attributeGroup name="attlist.distance">
-    <xs:attribute name="valeur" use="required">
-      <xs:simpleType>
-        <xs:restriction base="xs:integer">
-          <xs:minExclusive value="0"/>
-        </xs:restriction>
-      </xs:simpleType>
-    </xs:attribute>
-    <xs:attribute name="unite" use="required">
-      <xs:simpleType>
-        <xs:restriction base="xs:token">
-          <xs:enumeration value="m"/>
-          <xs:enumeration value="km"/>
-        </xs:restriction>
-      </xs:simpleType>
-    </xs:attribute>
+    <xs:attribute name="valeur" use="required" type="xs:positiveInteger"/>
+    <xs:attribute name="unite" use="required" type="uniteDistance"/>
   </xs:attributeGroup>
   <xs:element name="temps">
     <xs:complexType>
-      <xs:attributeGroup ref="attlist.temps"/>
+      <xs:attribute name="valeur" type="xs:time"/>
     </xs:complexType>
   </xs:element>
-  <xs:attributeGroup name="attlist.temps">
-    <xs:attribute name="heure" use="required">
-      <xs:simpleType>
-        <xs:restriction base="xs:integer">
-          <xs:minInclusive value="0"/>
-          <xs:maxInclusive value="72"/>
-        </xs:restriction>
-      </xs:simpleType>
-    </xs:attribute>
-    <xs:attribute name="minute" use="required">
-      <xs:simpleType>
-        <xs:restriction base="xs:integer">
-          <xs:minInclusive value="0"/>
-          <xs:maxInclusive value="59"/>
-        </xs:restriction>
-      </xs:simpleType>
-    </xs:attribute>
-  </xs:attributeGroup>
+
   <xs:element name="description" type="xs:string"/>
+  
   <xs:element name="lieux">
     <xs:complexType>
       <xs:sequence>
@@ -90,6 +54,7 @@
       <xs:field xpath="."/>
     </xs:unique>
   </xs:element>
+  
   <xs:element name="lieu">
     <xs:complexType>
       <xs:simpleContent>
@@ -99,8 +64,10 @@
         </xs:extension>
       </xs:simpleContent>
     </xs:complexType>
-
   </xs:element>
+  
+ 
+  
   <xs:attribute name="type">
     <xs:simpleType>
       <xs:restriction base="xs:token">

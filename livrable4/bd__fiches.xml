@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Auteur : Charles Follet -->
 
-<!DOCTYPE fiches SYSTEM "bd__fiches.dtd">
-
-<fiches>
+<fiches 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="bd__fiches.xsd" >
     <fiche_technique>
         <information>Office de Tourisme de Pau, tél: 05 59 27 27 08 Météorologie: 08 36 68 02 (64)</information>  
         <recommandations>L'itinéraire emprunte des petits bouts de randonnées abondamment balisés et facilement repérables. Evitez de le parcourir après un fort orage, quelques raides chemins en terre peuvent être boueux et le gué de Lahourcade peut alors demander un détour.</recommandations>
@@ -11,7 +11,7 @@
         <epoque><saison>HIVER</saison> <saison>PRINTEMPS</saison><saison>AUTOMNE</saison></epoque>
         <taille denivele="422" longueur="21995" unite="m"/>
         <altitude depart="170" arrive="170" maximale="328" unite="m"/>
-        <horaire heure="06" minute="00" seconde="00"/>
+        <horaire valeur="06:00:00"/>
         <depart lieu="Stade de Jurançon" commune="Jurançon"/>
         <arrivee lieu="Stade de Jurançon" commune="Jurançon"/>
     </fiche_technique>

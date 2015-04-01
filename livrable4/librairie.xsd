@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <!-- Fichier de librairie contenant des types réutilisables -->
+    
+    
+    <!-- Unité de distance : m, km -->
+    <xs:simpleType name="uniteDistance">
+        <xs:restriction base="xs:string">
+           <xs:enumeration value="m"/>
+            <xs:enumeration value="km"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <!-- Saison : Eté, hiver...  -->
+    <xs:simpleType name="saison">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="ETE"/>
+            <xs:enumeration value="HIVER"/>
+            <xs:enumeration value="PRINTEMPS"/>
+            <xs:enumeration value="AUTOMNE"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <!-- Difficultée : Eté, hiver...  -->
+    <xs:simpleType name="difficulte">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="FACILE"/>
+            <xs:enumeration value="MOYEN"/>
+            <xs:enumeration value="DIFFICILE"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <!-- Ville : esmemble de mots avec majuscule -->
+    <xs:simpleType name="ville">
+        <xs:restriction base="xs:string">
+            <xs:pattern value=""/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+</xs:schema>

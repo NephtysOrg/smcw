@@ -50,14 +50,11 @@
                 </xsl:attribute>
             </xsl:element>
             <xsl:element name="horaire">
-                <xsl:attribute name="heure">
-                    <xsl:value-of select="horaire/heure"></xsl:value-of>
-                </xsl:attribute>
-                <xsl:attribute name="minute">
-                    <xsl:value-of select="horaire/minute"></xsl:value-of>
-                </xsl:attribute>
-                <xsl:attribute name="seconde">
-                    <xsl:value-of select="horaire/seconde"></xsl:value-of>
+                <xsl:attribute name="valeur">
+                    <xsl:value-of select="horaire/heure"/>
+                    <xsl:text>:</xsl:text>
+                    <xsl:value-of select="horaire/minute"/>
+                    <xsl:text>:00</xsl:text>
                 </xsl:attribute>
             </xsl:element>
             <xsl:element name="depart">

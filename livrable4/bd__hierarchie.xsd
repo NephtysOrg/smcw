@@ -3,6 +3,7 @@
 <!-- Auteur: Roland Bary -->
 
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  
   <xs:element name="hierarchie">
     <xs:complexType>
       <xs:sequence>
@@ -62,10 +63,10 @@
     </xs:complexType>
   </xs:element>
   <xs:attributeGroup name="attlist.thematique">
-    <xs:attribute name="id" use="required" type="xs:NMTOKEN"/>
+    <xs:attribute name="id" use="required" type="xs:integer"/>
     <xs:attribute name="type" use="required">
       <xs:simpleType>
-        <xs:restriction base="xs:token">
+        <xs:restriction base="xs:string">
           <xs:enumeration value="culturelle"/>
         </xs:restriction>
       </xs:simpleType>
@@ -96,7 +97,7 @@
     </xs:complexType>
   </xs:element>
   <xs:attributeGroup name="attlist.sous_section">
-    <xs:attribute name="id" use="required" type="xs:NMTOKEN"/>
+    <xs:attribute name="id" use="required" type="xs:integer"/>
   </xs:attributeGroup>
   
   <xs:element name="synthese">
@@ -109,7 +110,7 @@
     </xs:complexType>
   </xs:element>
   <xs:attributeGroup name="attlist.synthese">
-    <xs:attribute name="id" use="required" type="xs:NMTOKEN"/>
+    <xs:attribute name="id" use="required" type="xs:integer"/>
     <xs:attribute name="type" use="required">
       <xs:simpleType>
         <xs:restriction base="xs:token">
@@ -140,7 +141,7 @@
     </xs:complexType>
   </xs:element>
   <xs:attributeGroup name="attlist.item">
-    <xs:attribute name="id" use="required" type="xs:NMTOKEN"/>
+    <xs:attribute name="id" use="required" type="xs:integer"/>
   </xs:attributeGroup>
   
   <xs:element name="label" type="xs:string"/>
