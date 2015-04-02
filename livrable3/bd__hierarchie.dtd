@@ -25,7 +25,7 @@
     <!ATTLIST synthese
         id NMTOKEN #REQUIRED
         type (technique | information) #REQUIRED
-    > 
+    >
 <!ELEMENT sous_titre (#PCDATA) >
 <!ELEMENT liste (item+) >
 <!ELEMENT item (label,descriptif)>
