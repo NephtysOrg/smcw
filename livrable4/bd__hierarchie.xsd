@@ -111,7 +111,10 @@
     <xs:complexType>
       <xs:sequence>
         <xs:element ref="sous_titre"/>
-        <xs:any namespace="namespace:rbary.univ-pau.fr:f"/>
+        <xs:choice>
+          <xs:element ref="liste"/>
+          <xs:any minOccurs="0" namespace="namespace:rbary.univ-pau.fr:f"/>
+        </xs:choice>
       </xs:sequence>
       <xs:attributeGroup ref="attlist.synthese"/>
     </xs:complexType>
