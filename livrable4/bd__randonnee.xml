@@ -2,7 +2,9 @@
 <!-- Auteur : Charles Follet -->
 
 <randonnee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="bd__randonnee.xsd">
+    xsi:noNamespaceSchemaLocation="bd__randonnee.xsd"
+    xmlns="namespace:rbary.univ-pau.fr:r">
+    
     <etape numero="1" libelle="Avenue Joliot-Curie">
         <distance valeur="1220" unite="m"/>
         <temps valeur="00:15:00"/>

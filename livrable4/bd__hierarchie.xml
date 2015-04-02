@@ -4,9 +4,9 @@
 <!-- Besoin exprime : hierarchie du document -->
 <!-- Auteur : Roland Bary -->
 
-<hierarchie
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="bd__hierarchie.xsd" >
+<hierarchie xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="bd__hierarchie.xsd"
+    xmlns="namespace:rbary.univ-pau.fr:h">
     <document id="1">
         <section_preambule>
             <titre>Pas de circuit</titre>

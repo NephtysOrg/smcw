@@ -354,86 +354,88 @@
                 </h:synthese>
 
                 <h:synthese id="2" type="information">
-                    <h:sous_titre>FICHE D'INFORMATION</h:sous_titre>
-                    <h:liste>
-                        <h:item id="1">
-                            <h:label>CARTE NECESSAIRE :</h:label>
-                            <h:descriptif>
-                                <f:cartes>
-                                    <f:carte>PAU</f:carte>
-                                </f:cartes>
-                            </h:descriptif>
-                        </h:item>
-                        <h:item id="2">
-                            <h:label>CARROYAGE :</h:label>
-                            <h:descriptif>
-                                <f:carroyage>1545ET</f:carroyage>
-                            </h:descriptif>
-                        </h:item>
-                        <h:item id="3">
-                            <h:label>NOM :</h:label>
-                            <h:descriptif>
-                                <f:nom>IGN TOP25</f:nom>
-                            </h:descriptif>
-                        </h:item>
-                        <h:item id="4">
-                            <h:label>ACCES ROUTIER :</h:label>
-                            <h:descriptif>
-                                <f:acces>De Pau (sortie n°10 de l'A64) prenez la direction
-                                    Saragosse-Jurançon jusqu'au pont d'Espagne que vous franchissez
-                                    vers le sud. Prenez à droite la rocade (Av du Corps-Franc
-                                    Pommies) toujours en direction Saragosse et dépassez un premier
-                                    rond point. Parcourez 350 m et prenez à droite la rue de
-                                    l'Artisanat jusqu'à un petit parking situé rive gauche du gave
-                                    de Pau.</f:acces>
-                            </h:descriptif>
-                        </h:item>
-                        <h:item id="5">
-                            <h:label>PARKING :</h:label>
-                            <h:descriptif>
-                                <f:parkings>
-                                    <f:parking>Rive gauche du gave près d'une passerelle pour
-                                        piétons et d'un parcours d'entraînement pour les chiens de
-                                        défense. C'est aussi le départ d'un circuit de
-                                        footing.</f:parking>
-                                </f:parkings>
-                            </h:descriptif>
-                        </h:item>
-                        <h:item id="6">
-                            <h:label>TYPE DE PARCOURS :</h:label>
-                            <h:descriptif>
-                                <f:type_parcours>BOUCLE</f:type_parcours>
-                            </h:descriptif>
-                        </h:item>
-                        <h:item id="7">
-                            <h:label>TYPE DE CHEMIN :</h:label>
-                            <h:descriptif>
-                                <f:types_chemin>
-                                    <f:type_chemin>CHEMIN GOUDRONNE</f:type_chemin>
-                                    <f:type_chemin>SENTIER BALISE</f:type_chemin>
-                                </f:types_chemin>
-                            </h:descriptif>
-                        </h:item>
-                        <h:item id="8">
-                            <h:label>TYPE DE TERRAIN :</h:label>
-                            <h:descriptif>
-                                <f:types_terrain>
-                                    <f:type_terrain>ZONE AGRICOLE</f:type_terrain>
-                                    <f:type_terrain>ZONE URBAINE</f:type_terrain>
-                                </f:types_terrain>
-                            </h:descriptif>
-                        </h:item>
-                        <h:item id="9">
-                            <h:label>MATERIEL :</h:label>
-                            <h:descriptif>
-                                <f:liste_materiel>
-                                    <f:materiel>Jumelles</f:materiel>
-                                    <f:materiel>chaussures de marche</f:materiel>
-                                    <f:materiel>bâtons</f:materiel>
-                                </f:liste_materiel>
-                            </h:descriptif>
-                        </h:item>
-                    </h:liste>
+                    <f:fiche_information>
+                        <h:sous_titre>FICHE D'INFORMATION</h:sous_titre>
+                        <h:liste>
+                            <h:item id="1">
+                                <h:label>CARTE NECESSAIRE :</h:label>
+                                <h:descriptif>
+                                    <f:cartes>
+                                        <f:carte>PAU</f:carte>
+                                    </f:cartes>
+                                </h:descriptif>
+                            </h:item>
+                            <h:item id="2">
+                                <h:label>CARROYAGE :</h:label>
+                                <h:descriptif>
+                                    <f:carroyage>1545ET</f:carroyage>
+                                </h:descriptif>
+                            </h:item>
+                            <h:item id="3">
+                                <h:label>NOM :</h:label>
+                                <h:descriptif>
+                                    <f:nom>IGN TOP25</f:nom>
+                                </h:descriptif>
+                            </h:item>
+                            <h:item id="4">
+                                <h:label>ACCES ROUTIER :</h:label>
+                                <h:descriptif>
+                                    <f:acces>De Pau (sortie n°10 de l'A64) prenez la direction
+                                        Saragosse-Jurançon jusqu'au pont d'Espagne que vous franchissez
+                                        vers le sud. Prenez à droite la rocade (Av du Corps-Franc
+                                        Pommies) toujours en direction Saragosse et dépassez un premier
+                                        rond point. Parcourez 350 m et prenez à droite la rue de
+                                        l'Artisanat jusqu'à un petit parking situé rive gauche du gave
+                                        de Pau.</f:acces>
+                                </h:descriptif>
+                            </h:item>
+                            <h:item id="5">
+                                <h:label>PARKING :</h:label>
+                                <h:descriptif>
+                                    <f:parkings>
+                                        <f:parking>Rive gauche du gave près d'une passerelle pour
+                                            piétons et d'un parcours d'entraînement pour les chiens de
+                                            défense. C'est aussi le départ d'un circuit de
+                                            footing.</f:parking>
+                                    </f:parkings>
+                                </h:descriptif>
+                            </h:item>
+                            <h:item id="6">
+                                <h:label>TYPE DE PARCOURS :</h:label>
+                                <h:descriptif>
+                                    <f:type_parcours>BOUCLE</f:type_parcours>
+                                </h:descriptif>
+                            </h:item>
+                            <h:item id="7">
+                                <h:label>TYPE DE CHEMIN :</h:label>
+                                <h:descriptif>
+                                    <f:types_chemin>
+                                        <f:type_chemin>CHEMIN GOUDRONNE</f:type_chemin>
+                                        <f:type_chemin>SENTIER BALISE</f:type_chemin>
+                                    </f:types_chemin>
+                                </h:descriptif>
+                            </h:item>
+                            <h:item id="8">
+                                <h:label>TYPE DE TERRAIN :</h:label>
+                                <h:descriptif>
+                                    <f:types_terrain>
+                                        <f:type_terrain>ZONE AGRICOLE</f:type_terrain>
+                                        <f:type_terrain>ZONE URBAINE</f:type_terrain>
+                                    </f:types_terrain>
+                                </h:descriptif>
+                            </h:item>
+                            <h:item id="9">
+                                <h:label>MATERIEL :</h:label>
+                                <h:descriptif>
+                                    <f:liste_materiel>
+                                        <f:materiel>Jumelles</f:materiel>
+                                        <f:materiel>chaussures de marche</f:materiel>
+                                        <f:materiel>bâtons</f:materiel>
+                                    </f:liste_materiel>
+                                </h:descriptif>
+                            </h:item>
+                        </h:liste>
+                    </f:fiche_information>
                 </h:synthese>
             </h:section_synthese>
         </h:document>
