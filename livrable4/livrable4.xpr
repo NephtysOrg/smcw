@@ -407,6 +407,7 @@
             <folder name="general">
                 <file name="general.dtd"/>
                 <file name="general.xml"/>
+                <file name="general.xsd"/>
                 <file name="general.xsl"/>
             </folder>
             <folder name="hierarchie">

@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Auteur : Charles Follet -->
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
-    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1">
-  <xs:include schemaLocation="librairie.xsd"/>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" 
+    vc:minVersion="1.1"
+    targetNamespace="namespace:rbary.univ-pau.fr:r"
+    xmlns="namespace:rbary.univ-pau.fr:r"
+    xmlns:lib="namespace:rbary.univ-pau.fr:lib"
+    elementFormDefault="qualified">
+  <xs:import namespace="namespace:rbary.univ-pau.fr:lib" schemaLocation="librairie.xsd"/>
+
   <xs:element name="randonnee">
     <xs:complexType>
       <xs:sequence>
@@ -33,7 +39,7 @@
   </xs:element>
   <xs:attributeGroup name="attlist.distance">
     <xs:attribute name="valeur" use="required" type="xs:positiveInteger"/>
-    <xs:attribute name="unite" use="required" type="uniteDistance"/>
+    <xs:attribute name="unite" use="required" type="lib:uniteDistance"/>
   </xs:attributeGroup>
   <xs:element name="temps">
     <xs:complexType>

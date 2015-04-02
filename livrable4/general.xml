@@ -2,9 +2,20 @@
 <!-- Fichier bd__hierarchie.xml -->
 <!-- Besoin exprime : hierarchie du document -->
 <!-- Auteur : Roland Bary -->
-<root>
-    <h:hierarchie xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:h="bd__hierarchie.xsd"
-        xmlns:f="bd__fiches.xsd" xmlns:r="bd__randonnee.xsd">
+<general:root  
+    
+    xmlns:general="namespace:rbary.univ-pau.fr:general"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="namespace:rbary.univ-pau.fr general.xsd"
+    xmlns:lib="namespace:rbary.univ-pau.fr:lib"
+    xmlns:h="namespace:rbary.univ-pau.fr:h"
+    xmlns:f="namespace:rbary.univ-pau.fr:f"
+    xmlns:r="namespace:rbary.univ-pau.fr:r"
+    
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    elementFormDefault="qualified"
+    >
+    <h:hierarchie>
         <h:document id="1">
             <h:section_preambule>
                 <h:titre>Pas de circuit</h:titre>
@@ -429,4 +440,4 @@
     </h:hierarchie>
 
 
-</root>
+</general:root>
