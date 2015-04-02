@@ -2,442 +2,207 @@
 <!-- Fichier bd__hierarchie.xml -->
 <!-- Besoin exprime : hierarchie du document -->
 <!-- Auteur : Roland Bary -->
-<general:root  
-    
-    xmlns:general="namespace:rbary.univ-pau.fr:general"
+<general:root xmlns:general="namespace:rbary.univ-pau.fr:general"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="namespace:rbary.univ-pau.fr general.xsd"
-    xmlns:lib="namespace:rbary.univ-pau.fr:lib"
-    xmlns:h="namespace:rbary.univ-pau.fr:h"
-    xmlns:f="namespace:rbary.univ-pau.fr:f"
-    xmlns:r="namespace:rbary.univ-pau.fr:r"
-    
-    xmlns:html="http://www.w3.org/1999/xhtml"
-    elementFormDefault="qualified"
-    >
-    <h:hierarchie>
-        <h:document id="1">
-            <h:section_preambule>
-                <h:titre>Pas de circuit</h:titre>
-                <h:intitule>Les coteaux de Jurançon</h:intitule>
-                <h:paragraphe>SITUATION : Région de Pau, coteaux de Jurançon</h:paragraphe>
-                <h:paragraphe>"Une lumière blonde et dorée qui supprime les ombres" A. Derain. Le
-                    parcours se déroule en partie le long des rives du gave et offre la possibilité
-                    en hiver d'observer différentes espèces de canards, aigrettes, hérons et le
-                    délicat martin pêcheur. Mais c'est surtout la traversée d'une partie des
-                    vignobles de Jurançon avec son exceptionnel paysage sur les Pyrénées qui est au
-                    centre de cette randonnée. De Jurançon à Monein, couvrant une bande de 40 km de
-                    long pour 30 de large et sculptant des paysages extraordinaires, le vignoble de
-                    Jurançon a acquis depuis des lustres une réputation remarquable. Selon la
-                    coutume Henri IV fut baptisé avec du Jurançon et ses lèvres frottées d'une
-                    gousse d'ail. Depuis, il semble que le caractère des béarnais a épousé le goût
-                    ambré de ce vin légendaire avec la fougue de ce baptême historique. Cette balade
-                    au coeur de ce terroir magnifique respire le travail des hommes. Vignerons du
-                    soleil et des Pyrénées, ils ont su planter sur des pentes sévères ces rangs de
-                    vignes conduits en hautain souvent ponctués de rosiers flamboyants. Aux portes
-                    de Pau, ces paysages sont à la portée de beaucoup de randonneurs. L'automne et
-                    ses lumières dorées est une saison idéale pour parcourir ces parages aux
-                    couleurs de miel. Peut être, avec un peu de chance, pourrez-vous croquer
-                    quelques grappes échappées aux ciseaux du vigneron et oubliées du bec des
-                    grives.</h:paragraphe>
-            </h:section_preambule>
-            <h:section_description>
-                <h:titre>DESCRIPTION</h:titre>
-                <h:sous_section id="1">
-                    <r:etape numero="1" libelle="Avenue Joliot-Curie">
-                        <r:distance valeur="1220" unite="m"/>
-                        <r:temps heure="00" minute="15"/>
-                        <h:paragraphe>
-                            <r:description> Il faut tourner le dos au gave de Pau et prendre la rue
-                                de l'Artisanat vers le sud. Traversez la double-voie et poursuivez
-                                en face par l'avenue Joliot-Curie. Laissez à droite le lycée
-                                professionnel de Jurançon tout en métal brillant et en tubes
-                                métalliques puis franchissez une passerelle pour pénétrer dans une
-                                zone de pavillons modernes. Poursuivez par la rue Auguste Renoir
-                                puis, au bout, virer à droite en direction de la rocade.
-                            </r:description>
-                        </h:paragraphe>
-                        <r:lieux>
-                            <r:lieu type="voie_fluviale" coord="43.287530, -0.391115">gave de
-                                Pau</r:lieu>
-                            <r:lieu type="voie_routiere" coord="43.287530, -0.391115">rue de
-                                l'Artisanat</r:lieu>
-                            <r:lieu type="voie_routiere" coord="43.287530, -0.391115">avenue
-                                Joliot-Curie</r:lieu>
-                            <r:lieu type="batiment" coord="43.287530, -0.391115">lycée professionnel
-                                de Jurançon</r:lieu>
-                            <r:lieu type="voie_routiere" coord="43.287530, -0.391115">rue Auguste
-                                Renoir</r:lieu>
-                        </r:lieux>
-                    </r:etape>
-                </h:sous_section>
-                <h:sous_section id="2">
-                    <r:etape numero="2" libelle="Le Clos Touzet">
-                        <r:distance valeur="2300" unite="m"/>
-                        <r:temps heure="00" minute="45"/>
-                        <h:paragraphe>
-                            <r:description> Traverser la rocade puis continuez en vous élevant par
-                                le chemin de Monplaisir, à la limite d'un bois. Laisser les
-                                bâtiments du « Nid béarnais » à gauche et continuer en sous-bois.
-                                Débouchez au sommet du coteau face « Au Clos Touzet » où la vue sur
-                                la plaine de Pau mérite un long coup d'oeil. Poursuivez en face. Ne
-                                pas descendre trop longtemps vers Jurançon, mais suivre l'avenue des
-                                Frères Barthélemy en face. </r:description>
-                        </h:paragraphe>
-                        <r:lieux>
-                            <r:lieu type="voie_routiere" coord="43.287530, -0.391115">chemin de
-                                Monplaisir</r:lieu>
-                            <r:lieu type="batiment" coord="43.287530, -0.391115">bâtiments du « Nid
-                                béarnais »</r:lieu>
-                            <r:lieu type="lieu_dit" coord="43.287530, -0.391115">Clos
-                                Touzet</r:lieu>
-                            <r:lieu type="voie_routiere" coord="43.287530, -0.391115">avenue des
-                                Frères Barthélemy</r:lieu>
-                        </r:lieux>
-                    </r:etape>
-                </h:sous_section>
-                <h:sous_section id="3">
-                    <r:etape numero="3" libelle="Le chemin Mirabel">
-                        <r:distance valeur="1200" unite="m"/>
-                        <r:temps heure="00" minute="20"/>
-                        <h:paragraphe>
-                            <r:description> Face à l'entrée du Clos Henri IV, au N 223, descendre à
-                                droite le chemin Mirabel (panneau) qui se faufile en sous-bois.
-                                Juste avant l'entrée de la ferme Larrau (remarquer le séquoia isolé)
-                                prenez un chemin creux à gauche qui plonge dans un sous-bois
-                                magnifique. Il décrit une épingle et s'enfonce dans une forêt où la
-                                lumière pénètre difficilement. Rejoignez le lit d'un petit ruisseau
-                                que vous suivez vers l'aval. Mousses, lichens, fougères constituent
-                                le décor luxuriant de cette descente humide. </r:description>
-                        </h:paragraphe>
-                        <r:lieux>
-                            <r:lieu type="lieu_dit" coord="43.287530, -0.391115">Clos Henri
-                                IV</r:lieu>
-                            <r:lieu type="voie_routiere" coord="43.287530, -0.391115">chemin
-                                Mirabel</r:lieu>
-                            <r:lieu type="batiment" coord="43.287530, -0.391115">ferme
-                                Larrau</r:lieu>
-                        </r:lieux>
-                    </r:etape>
-                </h:sous_section>
-                <h:sous_section id="4">
-                    <r:etape numero="4" libelle="Le Clos Lapeyre">
-                        <r:distance valeur="2430" unite="m"/>
-                        <r:temps heure="00" minute="45"/>
-                        <h:paragraphe>
-                            <r:description> Emprunter la route à gauche (chemin Vignau) où vous
-                                rencontrez un chemin équestre (itinéraire équestre Pyrénéen) que
-                                vous suivrez maintenant facilement vers le sud. Franchissez un pont
-                                et grimpez une piste cimentée « camin de Sobolle ». Dépasser la
-                                belle ferme Sobolle et continuer dans le bois. Rejoignez un chemin
-                                goudronné et le suivre à gauche vers le Clos Lapeyre. Après la
-                                première vigne, descendre à droite. Au premier palier, continuer à
-                                droite entre les vignes. En dessous, descendez en lisière d'un petit
-                                bois et franchissez un portillon métallique. Emprunter la D230 à
-                                droite sur 1 km. </r:description>
-                        </h:paragraphe>
-                        <r:lieux>
-                            <r:lieu type="voie_routiere" coord="43.287530, -0.391115">chemin
-                                Vignau</r:lieu>
-                            <r:lieu type="voie_routiere" coord="43.287530, -0.391115"> camin de
-                                Sobolle</r:lieu>
-                            <r:lieu type="batiment" coord="43.287530, -0.391115">ferme
-                                Sobolle</r:lieu>
-                            <r:lieu type="lieu_dit" coord="43.287530, -0.391115">Clos
-                                Lapeyre</r:lieu>
-                        </r:lieux>
-                    </r:etape>
-                </h:sous_section>
+    xmlns:lib="namespace:rbary.univ-pau.fr:lib" xmlns:h="namespace:rbary.univ-pau.fr:h"
+    xmlns:f="namespace:rbary.univ-pau.fr:f" xmlns:r="namespace:rbary.univ-pau.fr:r"
+    xmlns:html="http://www.w3.org/1999/xhtml" elementFormDefault="qualified">
+    <h:document id="1">
+        <h:section_preambule>
+            <h:titre>Pas de circuit</h:titre>
+            <h:intitule>Les coteaux de Jurançon</h:intitule>
+            <h:paragraphe>SITUATION : Région de Pau, coteaux de Jurançon</h:paragraphe>
+            <h:paragraphe>"Une lumière blonde et dorée qui supprime les ombres" A. Derain. Le parcours se déroule en partie le long des rives du gave et offre la possibilité en hiver d'observer différentes espèces de canards, aigrettes, hérons et le délicat martin pêcheur. Mais c'est surtout la traversée d'une partie des vignobles de Jurançon avec son exceptionnel paysage sur les Pyrénées qui est au centre de cette randonnée. De Jurançon à Monein, couvrant une bande de 40 km de long pour 30 de large et sculptant des paysages extraordinaires, le vignoble de Jurançon a acquis depuis des lustres une réputation remarquable. Selon la coutume Henri IV fut baptisé avec du Jurançon et ses lèvres frottées d'une gousse d'ail. Depuis, il semble que le caractère des béarnais a épousé le goût ambré de ce vin légendaire avec la fougue de ce baptême historique. Cette balade au coeur de ce terroir magnifique respire le travail des hommes. Vignerons du soleil et des Pyrénées, ils ont su planter sur des pentes sévères ces rangs de vignes conduits en hautain souvent ponctués de rosiers flamboyants. Aux portes de Pau, ces paysages sont à la portée de beaucoup de randonneurs. L'automne et ses lumières dorées est une saison idéale pour parcourir ces parages aux couleurs de miel. Peut être, avec un peu de chance, pourrez-vous croquer quelques grappes échappées aux ciseaux du vigneron et oubliées du bec des grives.</h:paragraphe>
+        </h:section_preambule>
+        <h:section_description>
+            <h:titre>DESCRIPTION</h:titre>
+            <h:sous_section id="1">
+                <r:etape numero="1" libelle="Avenue Joliot-Curie">
+                    <r:distance valeur="1220" unite="m"/>
+                    <r:temps valeur="00:15:00"/>
+                    <r:description>
+                        Il faut tourner le dos au gave de Pau et prendre la rue de l'Artisanat vers le sud. Traversez la double-voie et poursuivez en face par l'avenue Joliot-Curie. Laissez à droite le lycée professionnel de Jurançon tout en métal brillant et en tubes métalliques puis franchissez une passerelle pour pénétrer dans une zone de pavillons modernes. Poursuivez par la rue Auguste Renoir puis, au bout, virer à droite en direction de la rocade. 
+                    </r:description>
+                    <r:lieux>
+                        <r:lieu type="voie_fluviale" coord="43.287530, -0.391115">gave de
+                            Pau</r:lieu>
+                        <r:lieu type="voie_routiere" coord="43.287530, -0.391115">rue de
+                            l'Artisanat</r:lieu>
+                        <r:lieu type="voie_routiere" coord="43.287530, -0.391115">avenue
+                            Joliot-Curie</r:lieu>
+                        <r:lieu type="batiment" coord="43.287530, -0.391115">lycée professionnel de
+                            Jurançon</r:lieu>
+                        <r:lieu type="voie_routiere" coord="43.287530, -0.391115">rue Auguste
+                            Renoir</r:lieu>
+                    </r:lieux>
+                </r:etape>
+            </h:sous_section>
+            <h:sous_section id="2">
+                <r:etape numero="2" libelle="Le Clos Touzet">
+                    <r:distance valeur="2300" unite="m"/>
+                    <r:temps valeur="00:45:00"/>
+                    <r:description>
+                        Traverser la rocade puis continuez en vous élevant par le chemin de Monplaisir, à la limite d'un bois. Laisser les bâtiments du « Nid béarnais » à gauche et continuer en sous-bois. Débouchez au sommet du coteau face « Au Clos Touzet » où la vue sur la plaine de Pau mérite un long coup d'oeil. Poursuivez en face. Ne pas descendre trop longtemps vers Jurançon, mais suivre l'avenue des Frères Barthélemy en face.
+                    </r:description>
+                    <r:lieux>
+                        <r:lieu type="voie_routiere" coord="43.287530, -0.391115">chemin de
+                            Monplaisir</r:lieu>
+                        <r:lieu type="batiment" coord="43.287530, -0.391115">bâtiments du « Nid
+                            béarnais »</r:lieu>
+                        <r:lieu type="lieu_dit" coord="43.287530, -0.391115">Clos Touzet</r:lieu>
+                        <r:lieu type="voie_routiere" coord="43.287530, -0.391115">avenue des Frères
+                            Barthélemy</r:lieu>
+                    </r:lieux>
+                </r:etape>
+            </h:sous_section>
+            <h:sous_section id="3">
+                <r:etape numero="3" libelle="Le chemin Mirabel">
+                    <r:distance valeur="1200" unite="m"/>
+                    <r:temps valeur="00:20:00"/>
+                    <r:description>
+                        Face à l'entrée du Clos Henri IV, au N 223, descendre à droite le chemin Mirabel (panneau) qui se faufile en sous-bois. Juste avant l'entrée de la ferme Larrau (remarquer le séquoia isolé) prenez un chemin creux à gauche qui plonge dans un sous-bois magnifique. Il décrit une épingle et s'enfonce dans une forêt où la lumière pénètre difficilement. Rejoignez le lit d'un petit ruisseau que vous suivez vers l'aval. Mousses, lichens, fougères constituent le décor luxuriant de cette descente humide.
+                    </r:description>
+                    <r:lieux>
+                        <r:lieu type="lieu_dit" coord="43.287530, -0.391115">Clos Henri IV</r:lieu>
+                        <r:lieu type="voie_routiere" coord="43.287530, -0.391115">chemin
+                            Mirabel</r:lieu>
+                        <r:lieu type="batiment" coord="43.287530, -0.391115">ferme Larrau</r:lieu>
+                    </r:lieux>
+                </r:etape>
+            </h:sous_section>
+            <h:sous_section id="4">
+                <r:etape numero="4" libelle="Le Clos Lapeyre">
+                    <r:distance valeur="2430" unite="m"/>
+                    <r:temps valeur="00:45:00"/>
+                    <r:description>
+                        Emprunter la route à gauche (chemin Vignau) où vous rencontrez un chemin équestre (itinéraire équestre Pyrénéen) que vous suivrez maintenant facilement vers le sud. Franchissez un pont et grimpez une piste cimentée « camin de Sobolle ». Dépasser la belle ferme Sobolle et continuer dans le bois. Rejoignez un chemin goudronné et le suivre à gauche vers le Clos Lapeyre. Après la première vigne, descendre à droite. Au premier palier, continuer à droite entre les vignes. En dessous, descendez en lisière d'un petit bois et franchissez un portillon métallique. Emprunter la D230 à droite sur 1 km.
+                    </r:description>
+                    <r:lieux>
+                        <r:lieu type="voie_routiere" coord="43.287530, -0.391115">chemin
+                            Vignau</r:lieu>
+                        <r:lieu type="voie_routiere" coord="43.287530, -0.391115"> camin de
+                            Sobolle</r:lieu>
+                        <r:lieu type="batiment" coord="43.287530, -0.391115">ferme Sobolle</r:lieu>
+                        <r:lieu type="lieu_dit" coord="43.287530, -0.391115">Clos Lapeyre</r:lieu>
+                    </r:lieux>
+                </r:etape>
+            </h:sous_section>
+            <h:sous_section id="5">
+                <r:etape numero="5" libelle="Chemin de la Rec">
+                    <r:distance valeur="3060" unite="m"/>
+                    <r:temps valeur="00:45:00"/>
+                    <r:description>
+                        Au croisement de Roumiga, tourner à gauche, franchissez un pont et traversez la vallée vers le nord dans une cuvette profonde, agréable et paisible. Prenez à droite la D 217, puis aller à gauche vers St-Faust (2 km). Grimper le chemin de la Rec qui serpente en sous-bois et rejoignez la commune de St-Faust face à l'église (belle vue sur l'Ossau).
+                    </r:description>
+                    <r:lieux>
+                        <r:lieu type="voie_routiere" coord="43.287530, -0.391115">croisement de
+                            Roumiga</r:lieu>
+                        <r:lieu type="voie_routiere" coord="43.287530, -0.391115">chemin de la
+                            Rec</r:lieu>
+                        <r:lieu type="ville" coord="43.287530, -0.391115">commune de
+                            St-Faust</r:lieu>
+                    </r:lieux>
+                </r:etape>
+            </h:sous_section>
+            <h:sous_section id="6">
+                <r:etape numero="6" libelle="Les coteaux de St-Faust face.">
+                    <r:distance valeur="3915" unite="m"/>
+                    <r:temps valeur="01:10:00"/>
+                    <r:description>
+                        Emprunter la D 502 vers la droite pendant 1500 m et passer devant la Cité des Abeilles. Prenez le chemin Mantoulan à gauche et longer de belles vignes plantées sur un flanc sud. Suivez le balisage d'un chemin baptisé « les coteaux de St-Faust». Au sommet de la colline, prenez le beau chemin Constantine à droite qui file vers le nord. Il contourne deux exploitations (Larréheuga et Coutchous) et plonge entre les prairies. Rejoignez un chemin goudronné. En bas de la côte, virer à droite le long du ruisseau Lahourcade.
+                    </r:description>
+                    <r:lieux>
+                        <r:lieu type="voie_routiere" coord="43.287530, -0.391115">D 502</r:lieu>
+                        <r:lieu type="batiment" coord="43.287530, -0.391115">Cité des
+                            Abeilles</r:lieu>
+                        <r:lieu type="voie_routiere" coord="43.287530, -0.391115">chemin
+                            Mantoulan</r:lieu>
+                        <r:lieu type="voie_routiere" coord="43.287530, -0.391115">les coteaux de
+                            St-Faust</r:lieu>
+                        <r:lieu type="voie_routiere" coord="43.287530, -0.391115">chemin
+                            Constantine</r:lieu>
+                        <r:lieu type="voie_fluviale" coord="43.287530, -0.391115">ruisseau
+                            Lahourcade</r:lieu>
+                    </r:lieux>
+                </r:etape>
+            </h:sous_section>
+            <h:sous_section id="7">
+                <r:etape numero="7" libelle="Le ruisseau des Hies descente humide.">
+                    <r:distance valeur="3100" unite="m"/>
+                    <r:temps valeur="00:45:00"/>
+                    <r:description>
+                        Franchir le ruisseau à gué et tourner à droite (Panneau interdiction aux quads). S'élever rudement par un sentier dans les bois. Rejoignez l'église de St-Faust-de-bas, puis descendez à gauche par la D 502. Dans un virage prononcé à gauche, partir à droite à travers bois par le chemin Coureyou, puis rejoignez une nouvelle fois la D 502 qui conduit à l'entrée de Laroin. La quitter pour suivre le ruisseau des Hies en face. Franchir une passerelle et parvenez au centre du village. Traverser la D 2 et utiliser le chemin du Stade qui rejoint le ruisseau des Hies face à une passerelle. Longer le ruisseau puis passez sous la rocade D 2 par un tunnel à l'ambiance curieuse. 
+                    </r:description>
+                    <r:lieux>
+                        <r:lieu type="batiment" coord="43.287530, -0.391115">église de
+                            St-Faust-de-bas</r:lieu>
+                        <r:lieu type="voie_routiere" coord="43.287530, -0.391115">D 502</r:lieu>
+                        <r:lieu type="voie_routiere" coord="43.287530, -0.391115">chemin
+                            Coureyou</r:lieu>
+                        <r:lieu type="ville" coord="43.287530, -0.391115">Laroin</r:lieu>
+                        <r:lieu type="voie_routiere" coord="43.287530, -0.391115">D 2</r:lieu>
+                        <r:lieu type="voie_routiere" coord="43.287530, -0.391115">chemin du
+                            Stade</r:lieu>
+                    </r:lieux>
+                </r:etape>
+            </h:sous_section>
+            <h:sous_section id="8">
+                <r:etape numero="8" libelle="Le gave de Pau">
+                    <r:distance valeur="4770" unite="m"/>
+                    <r:temps valeur="01:15:00"/>
+                    <r:description>
+                        Suivre la rive gauche du gave de Pau longuement où les amateurs d'oiseaux se régaleront en surprenant les hérons ou les cormorans. Laissez un centre équestre à gauche et ignorez juste après la remarquable passerelle piétons de Laroin aux haubans en fibre de verre. Rejoindre le pont de Billères où vous passerez dessous et l'emprunter pour franchir le gave. Prendre à droite à son extrémité est un sentier facile et continuer maintenant rive droite en longeant le golf de Billères par le sud. Contourner le restaurant "Au bord de l'eau" et franchissez la passerelle pour piétons afin de retrouver le parking de départ.
+                    </r:description>
+                    <r:lieux>
+                        <r:lieu type="voie_fluviale" coord="43.287530, -0.391115">gave de
+                            Pau</r:lieu>
+                        <r:lieu type="batiment" coord="43.287530, -0.391115">pont de
+                            Billères</r:lieu>
+                        <r:lieu type="batiment" coord="43.287530, -0.391115">golf de
+                            Billères</r:lieu>
+                        <r:lieu type="batiment" coord="43.287530, -0.391115">restaurant "Au bord de
+                            l'eau"</r:lieu>
+                    </r:lieux>
+                </r:etape>
+            </h:sous_section>
+        </h:section_description>
 
-                <h:sous_section id="5">
-                    <r:etape numero="5" libelle="Chemin de la Rec">
-                        <r:distance valeur="3060" unite="m"/>
-                        <r:temps heure="00" minute="45"/>
-                        <h:paragraphe>
-                            <r:description> Au croisement de Roumiga, tourner à gauche, franchissez
-                                un pont et traversez la vallée vers le nord dans une cuvette
-                                profonde, agréable et paisible. Prenez à droite la D 217, puis aller
-                                à gauche vers St-Faust (2 km). Grimper le chemin de la Rec qui
-                                serpente en sous-bois et rejoignez la commune de St-Faust face à
-                                l'église (belle vue sur l'Ossau). </r:description>
-                        </h:paragraphe>
-                        <r:lieux>
-                            <r:lieu type="voie_routiere" coord="43.287530, -0.391115">croisement de
-                                Roumiga</r:lieu>
-                            <r:lieu type="voie_routiere" coord="43.287530, -0.391115">chemin de la
-                                Rec</r:lieu>
-                            <r:lieu type="ville" coord="43.287530, -0.391115">commune de
-                                St-Faust</r:lieu>
-                        </r:lieux>
-                    </r:etape>
-                </h:sous_section>
-
-                <h:sous_section id="6">
-                    <r:etape numero="6" libelle="Les coteaux de St-Faust face.">
-                        <r:distance valeur="3915" unite="m"/>
-                        <r:temps heure="01" minute="10"/>
-                        <h:paragraphe>
-                            <r:description> Emprunter la D 502 vers la droite pendant 1500 m et
-                                passer devant la Cité des Abeilles. Prenez le chemin Mantoulan à
-                                gauche et longer de belles vignes plantées sur un flanc sud. Suivez
-                                le balisage d'un chemin baptisé « les coteaux de St-Faust». Au
-                                sommet de la colline, prenez le beau chemin Constantine à droite qui
-                                file vers le nord. Il contourne deux exploitations (Larréheuga et
-                                Coutchous) et plonge entre les prairies. Rejoignez un chemin
-                                goudronné. En bas de la côte, virer à droite le long du ruisseau
-                                Lahourcade. </r:description>
-                        </h:paragraphe>
-                        <r:lieux>
-                            <r:lieu type="voie_routiere" coord="43.287530, -0.391115">D 502</r:lieu>
-                            <r:lieu type="batiment" coord="43.287530, -0.391115">Cité des
-                                Abeilles</r:lieu>
-                            <r:lieu type="voie_routiere" coord="43.287530, -0.391115">chemin
-                                Mantoulan</r:lieu>
-                            <r:lieu type="voie_routiere" coord="43.287530, -0.391115">les coteaux de
-                                St-Faust</r:lieu>
-                            <r:lieu type="voie_routiere" coord="43.287530, -0.391115">chemin
-                                Constantine</r:lieu>
-                            <r:lieu type="voie_fluviale" coord="43.287530, -0.391115">ruisseau
-                                Lahourcade</r:lieu>
-                        </r:lieux>
-                    </r:etape>
-                </h:sous_section>
-                <h:sous_section id="7">
-                    <r:etape numero="7" libelle="Le ruisseau des Hies descente humide.">
-                        <r:distance valeur="3100" unite="m"/>
-                        <r:temps heure="00" minute="45"/>
-                        <h:paragraphe>
-                            <r:description> Franchir le ruisseau à gué et tourner à droite (Panneau
-                                interdiction aux quads). S'élever rudement par un sentier dans les
-                                bois. Rejoignez l'église de St-Faust-de-bas, puis descendez à gauche
-                                par la D 502. Dans un virage prononcé à gauche, partir à droite à
-                                travers bois par le chemin Coureyou, puis rejoignez une nouvelle
-                                fois la D 502 qui conduit à l'entrée de Laroin. La quitter pour
-                                suivre le ruisseau des Hies en face. Franchir une passerelle et
-                                parvenez au centre du village. Traverser la D 2 et utiliser le
-                                chemin du Stade qui rejoint le ruisseau des Hies face à une
-                                passerelle. Longer le ruisseau puis passez sous la rocade D 2 par un
-                                tunnel à l'ambiance curieuse. </r:description>
-                        </h:paragraphe>
-                        <r:lieux>
-                            <r:lieu type="batiment" coord="43.287530, -0.391115">église de
-                                St-Faust-de-bas</r:lieu>
-                            <r:lieu type="voie_routiere" coord="43.287530, -0.391115">D 502</r:lieu>
-                            <r:lieu type="voie_routiere" coord="43.287530, -0.391115">chemin
-                                Coureyou</r:lieu>
-                            <r:lieu type="ville" coord="43.287530, -0.391115">Laroin</r:lieu>
-                            <r:lieu type="voie_routiere" coord="43.287530, -0.391115">D 2</r:lieu>
-                            <r:lieu type="voie_routiere" coord="43.287530, -0.391115">chemin du
-                                Stade</r:lieu>
-                        </r:lieux>
-                    </r:etape>
-                </h:sous_section>
-                <h:sous_section id="8">
-                    <r:etape numero="8" libelle="Le gave de Pau">
-                        <r:distance valeur="4770" unite="m"/>
-                        <r:temps heure="01" minute="15"/>
-                        <h:paragraphe>
-                            <r:description> Suivre la rive gauche du gave de Pau longuement où les
-                                amateurs d'oiseaux se régaleront en surprenant les hérons ou les
-                                cormorans. Laissez un centre équestre à gauche et ignorez juste
-                                après la remarquable passerelle piétons de Laroin aux haubans en
-                                fibre de verre. Rejoindre le pont de Billères où vous passerez
-                                dessous et l'emprunter pour franchir le gave. Prendre à droite à son
-                                extrémité est un sentier facile et continuer maintenant rive droite
-                                en longeant le golf de Billères par le sud. Contourner le restaurant
-                                "Au bord de l'eau" et franchissez la passerelle pour piétons afin de
-                                retrouver le parking de départ. </r:description>
-                        </h:paragraphe>
-                        <r:lieux>
-                            <r:lieu type="voie_fluviale" coord="43.287530, -0.391115">gave de
-                                Pau</r:lieu>
-                            <r:lieu type="batiment" coord="43.287530, -0.391115">pont de
-                                Billères</r:lieu>
-                            <r:lieu type="batiment" coord="43.287530, -0.391115">golf de
-                                Billères</r:lieu>
-                            <r:lieu type="batiment" coord="43.287530, -0.391115">restaurant "Au bord
-                                de l'eau"</r:lieu>
-                        </r:lieux>
-                    </r:etape>
-                </h:sous_section>
-            </h:section_description>
-
-            <h:section_thematique>
-                <h:thematique id="1" type="culturelle">
-                    <h:titre>THEMATIQUE CULTURELLE</h:titre>
-                    <h:paragraphe>La richesse des paysages de ces coteaux de Jurançon est
-                        directement liée au travail de l'homme. Sur ces monts béarnais se pratique
-                        la polyculture. Variés, parsemés de petites parcelles où se côtoient la
-                        vigne, le haricot tarbais et l'élevage de blondes d'Aquitaine, ce damier de
-                        paysage agricole s'oppose à la monoculture intensive des plaines à maïs
-                        voisines de Pau et de Mourenx. En agriculture, la polyculture est le fait de
-                        cultiver plusieurs espèces de plantes dans une même exploitation agricole ou
-                        plus largement dans une région naturelle. Ici, le maïs est semé au fond du
-                        vallon et profite de l'humidité des brouillards matinaux. A mi-pente, autour
-                        des granges croit le foin qui servira à l'alimentation des bestiaux. Enfin,
-                        sur les crêtes bénéficiant de toutes les expositions, face au soleil se
-                        développent les vignes de Jurançon. C'est l'expression la plus simple et la
-                        plus aboutit du monde agricole où la main de l'homme compose directement le
-                        paysage et influe profitablement sur son environnement.</h:paragraphe>
-                </h:thematique>
-            </h:section_thematique>
-            <h:section_synthese>
-                <h:synthese id="1" type="technique">
-                    <f:fiche_technique>
-                        <h:sous_titre>FICHE TECHNIQUE</h:sous_titre>
-                        <h:liste>
-                            <h:item id="1">
-                                <h:label>INFORMATION :</h:label>
-                                <h:descriptif>
-                                    <f:information>Office de Tourisme de Pau, tél: 05 59 27 27 08
-                                        Météorologie: 08 36 68 02 (64)</f:information>
-                                </h:descriptif>
-                            </h:item>
-                            <h:item id="2">
-                                <h:label>RECOMMANDATIONS :</h:label>
-                                <h:descriptif>
-                                    <f:recommandations>L'itinéraire emprunte des petits bouts de
-                                        randonnées abondamment balisés et facilement repérables.
-                                        Evitez de le parcourir après un fort orage, quelques raides
-                                        chemins en terre peuvent être boueux et le gué de Lahourcade
-                                        peut alors demander un détour.</f:recommandations>
-                                </h:descriptif>
-                            </h:item>
-                            <h:item id="3">
-                                <h:label>DIFFICULTE :</h:label>
-                                <h:descriptif>
-                                    <f:difficulte>FACILE</f:difficulte>
-                                </h:descriptif>
-                            </h:item>
-                            <h:item id="4">
-                                <h:label>EPOQUE CONSEILLEE :</h:label>
-                                <h:descriptif>
-                                    <f:epoque>
-                                        <f:saison>HIVER</f:saison>
-                                        <f:saison>PRINTEMPS</f:saison>
-                                        <f:saison>AUTOMNE</f:saison>
-                                    </f:epoque>
-                                </h:descriptif>
-                            </h:item>
-                            <h:item id="5">
-                                <h:label>DENIVELE TOTAL :</h:label>
-                                <h:descriptif>
-                                    <f:taille denivele="422" longueur="21995" unite="m"/>
-                                </h:descriptif>
-                            </h:item>
-                            <h:item id="6">
-                                <h:label>ALTITUDES :</h:label>
-                                <h:descriptif>
-                                    <f:altitude depart="170" arrive="170" maximale="328" unite="m"/>
-                                </h:descriptif>
-                            </h:item>
-                            <h:item id="7">
-                                <h:label>HORAIRE TOTAL :</h:label>
-                                <h:descriptif>
-                                    <f:horaire heure="06" minute="00" seconde="00"/>
-                                </h:descriptif>
-                            </h:item>
-                            <h:item id="8">
-                                <h:label>DEPART :</h:label>
-                                <h:descriptif>
-                                    <f:depart lieu="Stade de Jurançon" commune="Jurançon"/>
-                                </h:descriptif>
-                            </h:item>
-                            <h:item id="9">
-                                <h:label>ARRIVEE :</h:label>
-                                <h:descriptif>
-                                    <f:arrivee lieu="Stade de Jurançon" commune="Jurançon"/>
-                                </h:descriptif>
-                            </h:item>
-                        </h:liste>
-                    </f:fiche_technique>
-                </h:synthese>
-
-                <h:synthese id="2" type="information">
-                    <h:sous_titre>FICHE D'INFORMATION</h:sous_titre>
-                    <h:liste>
-                        <h:item id="1">
-                            <h:label>CARTE NECESSAIRE :</h:label>
-                            <h:descriptif>
-                                <f:cartes>
-                                    <f:carte>PAU</f:carte>
-                                </f:cartes>
-                            </h:descriptif>
-                        </h:item>
-                        <h:item id="2">
-                            <h:label>CARROYAGE :</h:label>
-                            <h:descriptif>
-                                <f:carroyage>1545ET</f:carroyage>
-                            </h:descriptif>
-                        </h:item>
-                        <h:item id="3">
-                            <h:label>NOM :</h:label>
-                            <h:descriptif>
-                                <f:nom>IGN TOP25</f:nom>
-                            </h:descriptif>
-                        </h:item>
-                        <h:item id="4">
-                            <h:label>ACCES ROUTIER :</h:label>
-                            <h:descriptif>
-                                <f:acces>De Pau (sortie n°10 de l'A64) prenez la direction
-                                    Saragosse-Jurançon jusqu'au pont d'Espagne que vous franchissez
-                                    vers le sud. Prenez à droite la rocade (Av du Corps-Franc
-                                    Pommies) toujours en direction Saragosse et dépassez un premier
-                                    rond point. Parcourez 350 m et prenez à droite la rue de
-                                    l'Artisanat jusqu'à un petit parking situé rive gauche du gave
-                                    de Pau.</f:acces>
-                            </h:descriptif>
-                        </h:item>
-                        <h:item id="5">
-                            <h:label>PARKING :</h:label>
-                            <h:descriptif>
-                                <f:parkings>
-                                    <f:parking>Rive gauche du gave près d'une passerelle pour
-                                        piétons et d'un parcours d'entraînement pour les chiens de
-                                        défense. C'est aussi le départ d'un circuit de
-                                        footing.</f:parking>
-                                </f:parkings>
-                            </h:descriptif>
-                        </h:item>
-                        <h:item id="6">
-                            <h:label>TYPE DE PARCOURS :</h:label>
-                            <h:descriptif>
-                                <f:type_parcours>BOUCLE</f:type_parcours>
-                            </h:descriptif>
-                        </h:item>
-                        <h:item id="7">
-                            <h:label>TYPE DE CHEMIN :</h:label>
-                            <h:descriptif>
-                                <f:types_chemin>
-                                    <f:type_chemin>CHEMIN GOUDRONNE</f:type_chemin>
-                                    <f:type_chemin>SENTIER BALISE</f:type_chemin>
-                                </f:types_chemin>
-                            </h:descriptif>
-                        </h:item>
-                        <h:item id="8">
-                            <h:label>TYPE DE TERRAIN :</h:label>
-                            <h:descriptif>
-                                <f:types_terrain>
-                                    <f:type_terrain>ZONE AGRICOLE</f:type_terrain>
-                                    <f:type_terrain>ZONE URBAINE</f:type_terrain>
-                                </f:types_terrain>
-                            </h:descriptif>
-                        </h:item>
-                        <h:item id="9">
-                            <h:label>MATERIEL :</h:label>
-                            <h:descriptif>
-                                <f:liste_materiel>
-                                    <f:materiel>Jumelles</f:materiel>
-                                    <f:materiel>chaussures de marche</f:materiel>
-                                    <f:materiel>bâtons</f:materiel>
-                                </f:liste_materiel>
-                            </h:descriptif>
-                        </h:item>
-                    </h:liste>
-                </h:synthese>
-            </h:section_synthese>
-        </h:document>
-    </h:hierarchie>
-
-
+        <h:section_thematique>
+            <h:thematique id="1" type="culturelle">
+                <h:titre>THEMATIQUE CULTURELLE</h:titre>
+                <h:paragraphe>La richesse des paysages de ces coteaux de Jurançon est directement liée au travail de l'homme. Sur ces monts béarnais se pratique la polyculture. Variés, parsemés de petites parcelles où se côtoient la vigne, le haricot tarbais et l'élevage de blondes d'Aquitaine, ce damier de paysage agricole s'oppose à la monoculture intensive des plaines à maïs voisines de Pau et de Mourenx. En agriculture, la polyculture est le fait de cultiver plusieurs espèces de plantes dans une même exploitation agricole ou plus largement dans une région naturelle. Ici, le maïs est semé au fond du vallon et profite de l'humidité des brouillards matinaux. A mi-pente, autour des granges croit le foin qui servira à l'alimentation des bestiaux. Enfin, sur les crêtes bénéficiant de toutes les expositions, face au soleil se développent les vignes de Jurançon. C'est l'expression la plus simple et la plus aboutit du monde agricole où la main de l'homme compose directement le paysage et influe profitablement sur son environnement.</h:paragraphe>
+            </h:thematique>
+        </h:section_thematique>
+        <h:section_synthese>
+            <h:synthese id="1" type="technique">
+                <h:sous_titre>FICHE TECHNIQUE</h:sous_titre>
+                <f:fiche_technique>
+                    <f:information>Office de Tourisme de Pau, tél: 05 59 27 27 08 Météorologie: 08 36 68 02 (64)</f:information>  
+                    <f:recommandations>L'itinéraire emprunte des petits bouts de randonnées abondamment balisés et facilement repérables. Evitez de le parcourir après un fort orage, quelques raides chemins en terre peuvent être boueux et le gué de Lahourcade peut alors demander un détour.</f:recommandations>
+                    <f:difficulte>FACILE</f:difficulte>
+                    <f:epoque><f:saison>HIVER</f:saison> <f:saison>PRINTEMPS</f:saison><f:saison>AUTOMNE</f:saison></f:epoque>
+                    <f:taille denivele="422" longueur="21995" unite="m"/>
+                    <f:altitude depart="170" arrive="170" maximale="328" unite="m"/>
+                    <f:horaire valeur="06:00:00"/>
+                    <f:depart lieu="Stade de Jurançon" commune="Jurançon"/>
+                    <f:arrivee lieu="Stade de Jurançon" commune="Jurançon"/>
+                </f:fiche_technique>
+            </h:synthese>
+            <h:synthese id="2" type="information">
+                <h:sous_titre>FICHE D'INFORMATION</h:sous_titre>
+                <f:fiche_information>
+                    <f:cartes><f:carte>PAU</f:carte></f:cartes>
+                    <f:carroyage>1545ET</f:carroyage> 
+                    <f:nom>IGN TOP25</f:nom> 
+                    <f:acces>De Pau (sortie n°10 de l'A64) prenez la direction Saragosse-Jurançon jusqu'au pont d'Espagne que vous franchissez vers le sud. Prenez à droite la rocade (Av du Corps-Franc Pommies) toujours en direction Saragosse et dépassez un premier rond point. Parcourez 350 m et prenez à droite la rue de l'Artisanat jusqu'à un petit parking situé rive gauche du gave de Pau.</f:acces>
+                    <f:parkings><f:parking>Rive gauche du gave près d'une passerelle pour piétons et d'un parcours d'entraînement pour les chiens de défense. C'est aussi le départ d'un circuit de footing.</f:parking></f:parkings>
+                    <f:type_parcours>BOUCLE</f:type_parcours> 
+                    <f:types_chemin><f:type_chemin>CHEMIN GOUDRONNE</f:type_chemin><f:type_chemin>SENTIER BALISE</f:type_chemin></f:types_chemin>
+                    <f:types_terrain><f:type_terrain>ZONE AGRICOLE</f:type_terrain><f:type_terrain>ZONE URBAINE</f:type_terrain></f:types_terrain>
+                    <f:liste_materiel><f:materiel>Jumelles</f:materiel><f:materiel>chaussures de marche</f:materiel><f:materiel>bâtons</f:materiel></f:liste_materiel>
+                </f:fiche_information>
+            </h:synthese>
+        </h:section_synthese>
+    </h:document>
 </general:root>

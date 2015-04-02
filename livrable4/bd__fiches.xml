@@ -3,7 +3,9 @@
 
 <fiches 
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="bd__fiches.xsd" >
+    xsi:noNamespaceSchemaLocation="bd__fiches.xsd"
+    xmlns="namespace:rbary.univ-pau.fr:f"
+    >
     <fiche_technique>
         <information>Office de Tourisme de Pau, tél: 05 59 27 27 08 Météorologie: 08 36 68 02 (64)</information>  
         <recommandations>L'itinéraire emprunte des petits bouts de randonnées abondamment balisés et facilement repérables. Evitez de le parcourir après un fort orage, quelques raides chemins en terre peuvent être boueux et le gué de Lahourcade peut alors demander un détour.</recommandations>

@@ -14,11 +14,11 @@
                         <scenarioAssociation-array>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>general.xml</String>
+                                    <String>fil_eau__fiches.xml</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
-                                        <String>general</String>
+                                        <String>fil_eau__fiches</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -67,7 +67,7 @@
                                     <null/>
                                 </field>
                                 <field name="name">
-                                    <String>general</String>
+                                    <String>fil_eau__fiches</String>
                                 </field>
                                 <field name="baseURL">
                                     <String></String>
@@ -85,10 +85,10 @@
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>file:/home/cfollet/MEGA/shared/smcw/projet/sources/livrable4/general.xsl</String>
+                                    <String>${pdu}/fiches_eau-bd.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
-                                    <String>file:/home/cfollet/MEGA/shared/smcw/projet/sources/livrable4/general.xml</String>
+                                    <String>${pdu}/fil_eau__fiches.xml</String>
                                 </field>
                                 <field name="defaultScenario">
                                     <Boolean>false</Boolean>

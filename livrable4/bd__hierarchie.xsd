@@ -2,15 +2,12 @@
 <!-- Besoin exprime : hierarchie du document -->
 <!-- Auteur: Roland Bary -->
 
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
-  xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" 
-  vc:minVersion="1.1"
-  xmlns:html="http://www.w3.org/1999/xhtml"
-  targetNamespace="namespace:rbary.univ-pau.fr:h"
-  xmlns="namespace:rbary.univ-pau.fr:h"
-  xmlns:lib="namespace:rbary.univ-pau.fr:lib"
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1"
+  xmlns:html="http://www.w3.org/1999/xhtml" targetNamespace="namespace:rbary.univ-pau.fr:h"
+  xmlns="namespace:rbary.univ-pau.fr:h" xmlns:lib="namespace:rbary.univ-pau.fr:lib"
   elementFormDefault="qualified">
-  
+
   <xs:element name="hierarchie">
     <xs:complexType>
       <xs:sequence>
@@ -32,7 +29,7 @@
   <xs:attributeGroup name="attlist.document">
     <xs:attribute name="id" use="required" type="xs:NMTOKEN"/>
   </xs:attributeGroup>
-  
+
   <xs:element name="section_preambule">
     <xs:complexType>
       <xs:sequence>
@@ -42,7 +39,7 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  
+
   <xs:element name="section_description">
     <xs:complexType>
       <xs:sequence>
@@ -51,7 +48,7 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  
+
   <xs:element name="section_thematique">
     <xs:complexType>
       <xs:sequence>
@@ -59,7 +56,7 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  
+
   <xs:element name="thematique">
     <xs:complexType>
       <xs:sequence>
@@ -79,7 +76,7 @@
       </xs:simpleType>
     </xs:attribute>
   </xs:attributeGroup>
-  
+
   <xs:element name="section_synthese">
     <xs:complexType>
       <xs:sequence>
@@ -87,31 +84,34 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  
+
   <xs:element name="titre" type="xs:string"/>
-  
+
   <xs:element name="intitule" type="xs:string"/>
-  
+
   <xs:element name="paragraphe" type="xs:string"/>
-  
+
   <xs:element name="sous_section">
     <xs:complexType>
-      <xs:sequence maxOccurs="unbounded">
-        <xs:element ref="sous_titre"/>
-        <xs:element ref="paragraphe"/>
-      </xs:sequence>
+      <xs:choice maxOccurs="unbounded">
+        <xs:any namespace="namespace:rbary.univ-pau.fr:r"/>
+        <xs:sequence>
+          <xs:element ref="sous_titre"/>
+          <xs:element ref="paragraphe"/>
+        </xs:sequence>
+      </xs:choice>
       <xs:attributeGroup ref="attlist.sous_section"/>
     </xs:complexType>
   </xs:element>
   <xs:attributeGroup name="attlist.sous_section">
     <xs:attribute name="id" use="required" type="xs:integer"/>
   </xs:attributeGroup>
-  
+
   <xs:element name="synthese">
     <xs:complexType>
       <xs:sequence>
         <xs:element ref="sous_titre"/>
-        <xs:element ref="liste"/>
+        <xs:any namespace="namespace:rbary.univ-pau.fr:f"/>
       </xs:sequence>
       <xs:attributeGroup ref="attlist.synthese"/>
     </xs:complexType>
@@ -127,9 +127,9 @@
       </xs:simpleType>
     </xs:attribute>
   </xs:attributeGroup>
-  
+
   <xs:element name="sous_titre" type="xs:string"/>
-  
+
   <xs:element name="liste">
     <xs:complexType>
       <xs:sequence>
@@ -137,7 +137,7 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  
+
   <xs:element name="item">
     <xs:complexType>
       <xs:sequence>
@@ -150,8 +150,8 @@
   <xs:attributeGroup name="attlist.item">
     <xs:attribute name="id" use="required" type="xs:integer"/>
   </xs:attributeGroup>
-  
+
   <xs:element name="label" type="xs:string"/>
-  
+
   <xs:element name="descriptif" type="xs:string"/>
 </xs:schema>

@@ -2,7 +2,6 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
     xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
     vc:minVersion="1.1"
-    xmlns:html="http://www.w3.org/1999/xhtml"
     targetNamespace="namespace:rbary.univ-pau.fr:lib"
     xmlns="namespace:rbary.univ-pau.fr:lib"
     elementFormDefault="qualified">
