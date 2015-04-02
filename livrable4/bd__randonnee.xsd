@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Auteur : Charles Follet -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
-    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1">
+  xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1">
   <xs:include schemaLocation="librairie.xsd"/>
   <xs:element name="randonnee">
     <xs:complexType>
       <xs:sequence>
         <xs:element minOccurs="1" maxOccurs="unbounded" ref="etape"/>
+        <!-- Une étape doit contenir au moins une randonnée -->
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  
   <xs:element name="etape">
     <xs:complexType>
       <xs:sequence>
@@ -20,27 +22,31 @@
       </xs:sequence>
       <xs:attributeGroup ref="attlist.etape"/>
     </xs:complexType>
-
   </xs:element>
+ 
   <xs:attributeGroup name="attlist.etape">
     <xs:attribute name="numero" use="required" type="xs:positiveInteger"/>
+    <!-- Nous avons essayé de forcer une séquence de nombre 1,2,3... mais n'avons pas réussi -->
     <xs:attribute name="libelle" use="required" type="xs:string"/>
   </xs:attributeGroup>
+  
   <xs:element name="distance">
     <xs:complexType>
       <xs:attributeGroup ref="attlist.distance"/>
     </xs:complexType>
   </xs:element>
+  
   <xs:attributeGroup name="attlist.distance">
     <xs:attribute name="valeur" use="required" type="xs:positiveInteger"/>
     <xs:attribute name="unite" use="required" type="uniteDistance"/>
   </xs:attributeGroup>
+  
   <xs:element name="temps">
     <xs:complexType>
       <xs:attribute name="valeur" type="xs:time"/>
     </xs:complexType>
   </xs:element>
-
+  
   <xs:element name="description" type="xs:string"/>
   
   <xs:element name="lieux">
@@ -61,12 +67,18 @@
         <xs:extension base="xs:string">
           <xs:attribute ref="type" use="required"/>
           <xs:attribute ref="coord" use="required"/>
+          <xs:assert
+            test="(@type eq 'voie_routiere' and matches(., 'chemin|route|rue|avenue|camin|croisement|[A|RN|N|D]\s?[0-9]{1,3}|coteaux') ) or
+                  (@type eq 'voie_fluviale' and matches(., 'fleuve|gave|riviere|lac|ruisseau') ) or
+                  (@type eq 'ville' and matches(., 'commune|ville|^[A-Z]') ) or
+                  (@type eq 'batiment' and matches(., 'église|golf|ferme|restaurant|pont|bâtiment|bâtiments|lycée|Cité') ) or 
+                  (@type eq 'lieu_dit' and matches(., '.*') )
+          "
+          />
         </xs:extension>
       </xs:simpleContent>
     </xs:complexType>
   </xs:element>
-  
- 
   
   <xs:attribute name="type">
     <xs:simpleType>
@@ -79,6 +91,7 @@
       </xs:restriction>
     </xs:simpleType>
   </xs:attribute>
+  
   <xs:attribute name="coord">
     <xs:simpleType>
       <xs:restriction base="xs:string">
@@ -86,5 +99,5 @@
       </xs:restriction>
     </xs:simpleType>
   </xs:attribute>
-
+  
 </xs:schema>
