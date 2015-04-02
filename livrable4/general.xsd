@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
+    vc:minVersion="1.1"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    targetNamespace="namespace:rbary.univ-pau.fr:general"
+    xmlns="namespace:rbary.univ-pau.fr:general"
+    xmlns:f="rbary.univ-pau.fr:f"
+    xmlns:r="rbary.univ-pau.fr:r"
+    xmlns:h="rbary.univ-pau.fr:h"
+    xmlns:lib="rbary.univ-pau.fr:lib"
+    elementFormDefault="qualified" >
+    
+    <xs:import namespace="namespace:rbary.univ-pau.fr:lib"
+               schemaLocation="librairie.xsd"/>
+    
+    <xs:import namespace="namespace:rbary.univ-pau.fr:h"
+               schemaLocation="bd__hierarchie.xsd"/>
+    
+    <xs:import namespace="namespace:rbary.univ-pau.fr:f"
+        schemaLocation="bd__fiches.xsd"/>
+    
+    <xs:import namespace="namespace:rbary.univ-pau.fr:r"
+        schemaLocation="bd__randonnee.xsd"/>
+    
+    <xs:element name="root" />
+    
+</xs:schema>
+
+

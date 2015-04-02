@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
-  <xs:include schemaLocation="librairie.xsd"/>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+  xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
+  vc:minVersion="1.1"
+  xmlns:html="http://www.w3.org/1999/xhtml"
+  targetNamespace="namespace:rbary.univ-pau.fr:f"
+  xmlns="namespace:rbary.univ-pau.fr:f"
+  xmlns:lib="namespace:rbary.univ-pau.fr:lib"
+  elementFormDefault="qualified">
+  
+  <xs:import namespace="namespace:rbary.univ-pau.fr:lib" schemaLocation="librairie.xsd"/>
   
   <xs:element name="fiches">
     <xs:complexType>
@@ -34,7 +41,7 @@
   <xs:element name="recommandations" type="xs:string"/>
   
   
-  <xs:element name="difficulte" type="difficulte"/>
+  <xs:element name="difficulte" type="lib:difficulte"/>
    
   
   
@@ -46,7 +53,7 @@
     </xs:complexType>
   </xs:element>
   
-  <xs:element name="saison" type="saison"/>
+  <xs:element name="saison" type="lib:saison"/>
   
   
   <xs:element name="taille">
@@ -61,7 +68,7 @@
     
     <xs:attribute name="longueur" use="required" type="xs:positiveInteger" />
     
-    <xs:attribute name="unite" use="required" type="uniteDistance"/>
+    <xs:attribute name="unite" use="required" type="lib:uniteDistance"/>
   </xs:attributeGroup>
   
   <xs:element name="altitude">
@@ -78,7 +85,7 @@
     
     <xs:attribute name="maximale" use="required" type="xs:positiveInteger" />
     
-    <xs:attribute name="unite" use="required" type="uniteDistance"/>
+    <xs:attribute name="unite" use="required" type="lib:uniteDistance"/>
   </xs:attributeGroup>
   
   
