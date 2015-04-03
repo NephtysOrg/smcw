@@ -6,8 +6,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="namespace:rbary.univ-pau.fr general.xsd"
     xmlns:lib="namespace:rbary.univ-pau.fr:lib" xmlns:h="namespace:rbary.univ-pau.fr:h"
-    xmlns:f="namespace:rbary.univ-pau.fr:f" xmlns:r="namespace:rbary.univ-pau.fr:r"
-    xmlns:html="http://www.w3.org/1999/xhtml" elementFormDefault="qualified">
+    xmlns:f="namespace:rbary.univ-pau.fr:f" xmlns:r="namespace:rbary.univ-pau.fr:r">
     <h:document id="1">
         <h:section_preambule>
             <h:titre>Pas de circuit</h:titre>
@@ -167,13 +166,13 @@
                 </r:etape>
             </h:sous_section>
         </h:section_description>
-
         <h:section_thematique>
             <h:thematique id="1" type="culturelle">
                 <h:titre>THEMATIQUE CULTURELLE</h:titre>
                 <h:paragraphe>La richesse des paysages de ces coteaux de Jurançon est directement liée au travail de l'homme. Sur ces monts béarnais se pratique la polyculture. Variés, parsemés de petites parcelles où se côtoient la vigne, le haricot tarbais et l'élevage de blondes d'Aquitaine, ce damier de paysage agricole s'oppose à la monoculture intensive des plaines à maïs voisines de Pau et de Mourenx. En agriculture, la polyculture est le fait de cultiver plusieurs espèces de plantes dans une même exploitation agricole ou plus largement dans une région naturelle. Ici, le maïs est semé au fond du vallon et profite de l'humidité des brouillards matinaux. A mi-pente, autour des granges croit le foin qui servira à l'alimentation des bestiaux. Enfin, sur les crêtes bénéficiant de toutes les expositions, face au soleil se développent les vignes de Jurançon. C'est l'expression la plus simple et la plus aboutit du monde agricole où la main de l'homme compose directement le paysage et influe profitablement sur son environnement.</h:paragraphe>
             </h:thematique>
         </h:section_thematique>
+       
         <h:section_synthese>
             <h:synthese id="1" type="technique">
                 <h:sous_titre>FICHE TECHNIQUE</h:sous_titre>

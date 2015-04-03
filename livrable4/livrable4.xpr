@@ -14,31 +14,16 @@
                         <scenarioAssociation-array>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>fil_eau__fiches.xml</String>
+                                    <String>general.xml</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
-                                        <String>fil_eau__fiches</String>
+                                        <String>general</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
                                     <list>
                                         <String>XSL</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>hierarchie_eau-bd.xsl</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>hierarchie_eau-bd</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XML</String>
                                     </list>
                                 </field>
                             </scenarioAssociation>
@@ -57,6 +42,21 @@
                                     </list>
                                 </field>
                             </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>hierarchie_eau-bd.xsl</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>hierarchie_eau-bd</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XML</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
                         </scenarioAssociation-array>
                     </entry>
                     <entry>
@@ -67,7 +67,7 @@
                                     <null/>
                                 </field>
                                 <field name="name">
-                                    <String>fil_eau__fiches</String>
+                                    <String>general</String>
                                 </field>
                                 <field name="baseURL">
                                     <String></String>
@@ -85,10 +85,10 @@
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>${pdu}/fiches_eau-bd.xsl</String>
+                                    <String>${pdu}/general.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
-                                    <String>${pdu}/fil_eau__fiches.xml</String>
+                                    <String>${pdu}/general.xml</String>
                                 </field>
                                 <field name="defaultScenario">
                                     <Boolean>false</Boolean>
@@ -106,10 +106,10 @@
                                     <Boolean>false</Boolean>
                                 </field>
                                 <field name="outputFile">
-                                    <null/>
+                                    <File>${pd}/sortie.tex</File>
                                 </field>
                                 <field name="outputResource">
-                                    <null/>
+                                    <String>${pd}/sortie.tex</String>
                                 </field>
                                 <field name="openOtherLocationInBrowser">
                                     <Boolean>false</Boolean>
@@ -405,7 +405,6 @@
                 <file name="fil_eau__fiches.xsd"/>
             </folder>
             <folder name="general">
-                <file name="general.dtd"/>
                 <file name="general.xml"/>
                 <file name="general.xsd"/>
                 <file name="general.xsl"/>

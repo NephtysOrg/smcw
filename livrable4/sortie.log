@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.12.1)  31 MAR 2015 21:02
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.12.1)  3 APR 2015 17:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -410,30 +410,30 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 ) (./sortie.aux)
 \openout1 = `sortie.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Info: Redefining \degres on input line 7.
-LaTeX Info: Redefining \dots on input line 7.
-LaTeX Info: Redefining \up on input line 7.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Info: Redefining \degres on input line 8.
+LaTeX Info: Redefining \dots on input line 8.
+LaTeX Info: Redefining \up on input line 8.
 
 Package frenchb.ldf Warning: OT1 encoding should not be used for French. 
 (frenchb.ldf)                Add \usepackage[T1]{fontenc} to the preamble
-(frenchb.ldf)                of your document, on input line 7.
+(frenchb.ldf)                of your document, on input line 8.
 
 \AtBeginShipoutBox=\box26
-Package hyperref Info: Link coloring OFF on input line 7.
+Package hyperref Info: Link coloring OFF on input line 8.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -442,9 +442,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count102
 )
-LaTeX Info: Redefining \ref on input line 7.
-LaTeX Info: Redefining \pageref on input line 7.
-LaTeX Info: Redefining \nameref on input line 7.
+LaTeX Info: Redefining \ref on input line 8.
+LaTeX Info: Redefining \pageref on input line 8.
+LaTeX Info: Redefining \nameref on input line 8.
 
 (./sortie.out) (./sortie.out)
 \@outlinefile=\write3
@@ -466,49 +466,144 @@ LaTeX Info: Redefining \nameref on input line 7.
 \everyMPtoPDFconversion=\toks18
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 20.
+(Font)              <7> on input line 30.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 20.
+(Font)              <5> on input line 30.
 
-Underfull \hbox (badness 10000) in paragraph at lines 19--35
-
- []
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 105.
-
-Underfull \hbox (badness 10000) in paragraph at lines 44--105
+Underfull \hbox (badness 10000) in paragraph at lines 28--45
 
  []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 105.
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 53--72
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--72
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--89
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--89
+
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 91--102
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--102
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--118
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--118
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--133
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--133
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--156
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--156
+
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 158--177
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 158--177
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--195
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--195
+
+ []
+
+[4]
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 204.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 215--216
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 215--216
+
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 226.
+[5]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 226.
  (./sortie.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 105.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 105.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 226.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 226.
 Package rerunfilecheck Info: File `sortie.out' has not changed.
-(rerunfilecheck)             Checksum: 9534070C232AA0A3F935CB7C3E3F8D46;35.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 105.
+(rerunfilecheck)             Checksum: CF6F6A79D6688AE659183E5AF32AB8CB;529.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 226.
  ) 
 Here is how much of TeX's memory you used:
- 6239 strings out of 494958
- 89097 string characters out of 6179213
- 185933 words of memory out of 5000000
- 9445 multiletter control sequences out of 15000+600000
- 5152 words of font info for 19 fonts, out of 8000000 for 9000
+ 6280 strings out of 494958
+ 89580 string characters out of 6179213
+ 181949 words of memory out of 5000000
+ 9460 multiletter control sequences out of 15000+600000
+ 6103 words of font info for 22 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 29i,8n,40p,225b,375s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmsy5.pfb>
-Output written on sortie.pdf (2 pages, 70600 bytes).
+ 29i,8n,40p,1472b,381s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmti10.pfb>
+Output written on sortie.pdf (5 pages, 121120 bytes).
 PDF statistics:
- 46 PDF objects out of 1000 (max. 8388607)
- 35 compressed objects within 1 object stream
- 4 named destinations out of 1000 (max. 500000)
- 9 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 157 PDF objects out of 1000 (max. 8388607)
+ 140 compressed objects within 2 object streams
+ 29 named destinations out of 1000 (max. 500000)
+ 73 words of extra memory for PDF output out of 10000 (max. 10000000)
 
