@@ -1,0 +1,18 @@
+\documentclass[titlepage]{article}
+        \usepackage[utf8]{inputenc}
+        \usepackage[francais]{babel}
+        \usepackage{hyperref}
+
+        \usepackage{xcolor}
+        \newcommand\ytl[2]{
+\parbox[b]{8em}{\hfill{\color{cyan}\bfseries\sffamily #1}~$\cdots\cdots$~}\makebox[0pt][c]{$\bullet$}\vrule\quad \parbox[c]{4.5cm}{\vspace{7pt}\color{red!40!black!80}\raggedright\sffamily #2.\\[7pt]}\\[-3pt]}
+        
+\hypersetup{
+    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black}
+}
+
+        \begin{document}
+
