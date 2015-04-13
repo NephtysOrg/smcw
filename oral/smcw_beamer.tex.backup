@@ -1,0 +1,116 @@
+\documentclass[10pt, compress]{beamer}
+
+\usetheme{m}
+
+\usepackage{booktabs}
+\usepackage[scale=2]{ccicons}
+\usepackage{minted}
+
+\usepgfplotslibrary{dateplot}
+
+\usemintedstyle{trac}
+
+\title{Structures et modèles des contenus du web}
+\subtitle{Conception et transformations de langages de balisage}
+\date{\today}
+\author{Charles Follet, Roland Bary}
+\institute{Université de Pau et des Pays de l'Adour}
+
+\begin{document}
+\maketitle
+\begin{frame}[fragile]
+  \frametitle{Sommaire}
+  \tableofcontents
+\end{frame}
+
+\section{Introduction}
+\begin{frame}[fragile]
+  \frametitle{Introduction}
+  \begin{itemize}[<+->]
+  \setbeamertemplate{itemize item}[square]
+    \item{Evolution du web}
+    \item{Necessité de structurer et modéliser les contenus du web de la manière la plus indépendante possible}
+    \item{Manipulation de données hétérogènes voire irrégulières exprimés en XML}
+    \item{Etude de cas: Conception de langages de balisages permettant la modélisation d'un type spécifique de données}
+    \item{Documents relatifs à des circuits de randonnée}
+  \end{itemize}
+\end{frame}
+
+\section{Les besoins à modéliser}
+\begin{frame}[fragile]
+  \frametitle{Expression des besoins à modéliser}
+      \begin{itemize}
+      \setbeamertemplate{itemize item}[square]
+	\setbeamertemplate{itemize item}[square]
+	\item{Informations de randonnée}
+	\item{Hiérachie/Structure des documents}
+	\item{Fiches d'information et fiches techniques}
+      \end{itemize}    
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Conception des langages de balisage}
+\begin{frame}[fragile]
+ \frametitle{Conception des langages de balisage}
+  \begin{description}[<+->]
+  \setbeamertemplate{itemize item}[square]
+   \item [Balisage fil de l'eau/Balisage naturel] Aucune contrainte particulière 
+   \item [Balisage type bd/Balisage structuré] Necessité de conserver la même organisation des balises
+   \item [Problématique] Langage naturel vers Langage structuré $\Rightarrow$ Perte d'informations
+   \item []\begin{minted}[fontsize=\small]{latex}
+    tourner le dos au <lieu>gave de Pau</lieu> et prendre
+    ...<lieu>gave de Pau</lieu>...\end{minted}
+  \end{description}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Hiérarchie}
+\begin{frame}[fragile]
+ \frametitle{Conception des langages de balisage - Hiérarchie}
+  \begin{itemize}[<+->]
+  \setbeamertemplate{itemize item}[square]
+    \item{Modélisation des différentes parties qui constituent le document}
+    \item{Conservation de l'intégralité du document}
+    \item{Préambule, description, thematique, synthese, titres, sous-titres, listes,...}
+    \item{Avantage: Structuration précise et spécifique (s'applique bien aux documents etudiés) }
+    \item{Inconvénient: ne peut structurer que le jeu de documents (jurançon, 7villages, Crabere,..) , modélisation pas assez affinée}
+  \end{itemize}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Information de randonnées}
+\begin{frame}[fragile]
+ \frametitle{Conception des langages de balisage - Randonnée}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Fiches techniques et informatives}
+\begin{frame}[fragile]
+ \frametitle{Conception des langages de balisage - Fiches}
+ \begin{itemize}[<+->]
+  \setbeamertemplate{itemize item}[square]
+    \item{Modélisation de fiches recapitulatives}
+    \item{Informations retenues: Fiche technique et fiche d'information (listes d'item)}
+    \item{
+    \item{Avantage: sans avoir a parcourir tout le document }
+    \item{Inconvénient:}
+  \end{itemize}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Transformations des langages}
+\begin{frame}[fragile]
+ \frametitle{Transformations des langages}
+\end{frame}
+
+\subsection{Transformation sans contrôle}
+\begin{frame}[fragile]
+ \frametitle{Transformations des langages - sans contrôle}
+\end{frame}
+
+\subsection{Transformation avec contrôle}
+\begin{frame}[fragile]
+ \frametitle{Transformations des langages - avec contrôle}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Conclusion}
+\begin{frame}[fragile]
+\end{frame}
+
+\end{document}

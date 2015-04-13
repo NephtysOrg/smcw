@@ -1,0 +1,11 @@
+\beamer@endinputifotherversion {3.24pt}
+\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
+\beamer@sectionintoc {2}{Les besoins à modéliser}{9}{0}{2}
+\beamer@sectionintoc {3}{Conception des langages de balisage}{11}{0}{3}
+\beamer@subsectionintoc {3}{1}{Hiérarchie}{16}{0}{3}
+\beamer@subsectionintoc {3}{2}{Information de randonnées}{21}{0}{3}
+\beamer@subsectionintoc {3}{3}{Fiches techniques et informatives}{22}{0}{3}
+\beamer@sectionintoc {4}{Transformations des langages}{27}{0}{4}
+\beamer@subsectionintoc {4}{1}{Transformation sans contrôle}{29}{0}{4}
+\beamer@subsectionintoc {4}{2}{Transformation avec contrôle}{30}{0}{4}
+\beamer@sectionintoc {5}{Conclusion}{31}{0}{5}
