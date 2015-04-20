@@ -51,18 +51,25 @@
 \section{Conception des langages de balisage}
 \begin{frame}[fragile]
  \frametitle{Conception des langages de balisage}
-  \begin{description}[<+->]
+  \begin{itemize}[<+->]
   \setbeamertemplate{itemize item}[square]
-   \item [Balisage fil de l'eau/Balisage naturel] Aucune contrainte particulière 
-   \item [Balisage type bd/Balisage structuré] Necessité de conserver la même organisation des balises
-   \item [Problématique] Langage naturel vers Langage structuré $\Rightarrow$ Perte d'informations
-   \item []\begin{minted}[fontsize=\small]{latex}
-    tourner le dos au <lieu>gave de Pau</lieu> et prendre
-    ...<lieu>gave de Pau</lieu>...\end{minted}
-  \end{description}
+   \item {Balisage fil de l'eau/Balisage naturel}
+    \begin{itemize}
+     \item Avantage : Aucune contrainte particulière
+     \item Inconvénients: Difficultés rencontrées sur le traitement de certaines données (requêtes de type bd)
+    \end{itemize}
+   \item {Balisage type bd/Balisage structuré Necessité de conserver la même organisation des balises}
+    \begin{itemize}
+     \item Avantage: Possibilité de faire aisément des requêtes de type BD
+     \item Inconvénients: Perte d'information, contrainte de structure
+    \end{itemize}
+   \item {Problème :Langage naturel vers Langage structuré $\Rightarrow$ Perte d'informations}
+   \item Exemple: tourner le dos au <lieu>gave de Pau</lieu> et prendre
+   $\Rightarrow$ ...<lieu>gave de Pau</lieu>...
+  \end{itemize}
 \end{frame}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Hiérarchie}
 \begin{frame}[fragile]
  \frametitle{Conception des langages de balisage - Hiérarchie}
@@ -72,13 +79,20 @@
     \item{Conservation de l'intégralité du document}
     \item{Préambule, description, thematique, synthese, titres, sous-titres, listes,...}
     \item{Avantage: Structuration précise et spécifique (s'applique bien aux documents etudiés) }
-    \item{Inconvénient: ne peut structurer que le jeu de documents (jurançon, 7villages, Crabere,..) , modélisation pas assez affinée}
+    \item{Inconvénient: ne peut structurer que le jeu de documents (jurançon, 7villages, Crabere,..) , modélisation pas assez raffinée}
   \end{itemize}
 \end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Information de randonnées}
 \begin{frame}[fragile]
  \frametitle{Conception des langages de balisage - Randonnée}
+ \begin{itemize}[<+->]
+  \setbeamertemplate{itemize item}[square]
+    \item{Modélisation des différentes étapes qui constitues la randonnée}
+    \item{L'intégralité du document n'est pas conservée}
+    \item{Lieux,description,distance,durée,...}
+    \item{Avantage: Permet des recherches temporelles et géographiques (example : Randonnée de moins d'une heure)}
+  \end{itemize}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Fiches techniques et informatives}
@@ -88,29 +102,48 @@
   \setbeamertemplate{itemize item}[square]
     \item{Modélisation de fiches recapitulatives}
     \item{Informations retenues: Fiche technique et fiche d'information (listes d'item)}
-    \item{}
-    \item{Avantage: }
+    \item{fiches technique, fiche d'information}
+    \item{Avantage: Permet un résumé rapide, ajoute des information supplémentaires aux autres langages}
     \item{Inconvénient: On ne peut modéliser que deux types de fiches}
   \end{itemize}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Transformations des langages}
-\begin{frame}[fragile]
- \frametitle{Transformations des langages}
-\end{frame}
-
 \subsection{Transformation sans contrôle}
 \begin{frame}[fragile]
  \frametitle{Transformations des langages - sans contrôle}
+ \begin{itemize}[<+->]
+  \setbeamertemplate{itemize item}[square]
+    \item Langage Fil de l'eau $\blacktriangleright$ langage BD : XSLT version 1
+    \item Avantage: Pas de contraintes à respecter, large choix de transformations possibles 
+    \item Inconvénient: Inexactitude quand a la conservation des données depuis l'entrée vers la sortie
+  \end{itemize}
 \end{frame}
 
 \subsection{Transformation avec contrôle}
 \begin{frame}[fragile]
  \frametitle{Transformations des langages - avec contrôle}
+ \begin{itemize}[<+->]
+  \setbeamertemplate{itemize item}[square]
+    \item{lors du passage du langage de type BD vers l'application de sortie \LaTeX}
+    \item{Contrôle effectué en entrée et pas en sortie (En sortie contrôle par la compilation \LaTeX}
+    \item{Contrôle sur le contenu et les attributs des balises par les schemas XML}
+    \item{Contrôle sur les attributs des balises également grâce aux DTDs}
+    \item Limites: 
+      \begin{itemize}
+       \item Etablissement d'un ordre sur une séquence de valeurs numériques en occurence sur les identifiants des différentes étapes d'un circuit de randonnée  
+       \item XML Schema généré à partir d'une DTD avec une erreur d'ambiguïté quand la DTD contient des élément admettant plusieurs définitions possibles; Solution: Ecriture plus complexe de la DTD
+      \end{itemize}
+  \end{itemize}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusion}
 \begin{frame}[fragile]
+   \begin{itemize}[<+->]
+  \setbeamertemplate{itemize item}[square]
+    \item Découverte de la véritable utilisation du meta-langage XML et des multiples possibilités de conception de langages.
+    \item Limites rencontrées quand à l'utilisation des DTD pour structurer l'information.
+    \item Utilisation de schémas XML pour palier à cette limite.
+  \end{itemize}
 \end{frame}
-
 \end{document}

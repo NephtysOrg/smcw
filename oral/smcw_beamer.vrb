@@ -1,0 +1,6 @@
+\begin{itemize}[<+->]
+  \setbeamertemplate{itemize item}[square]
+    \item Découverte de la véritable utilisation du meta-langage XML et des multiples possibilités de conception de langages
+    \item Limites rencontrées quand à l'utilisation des DTD pour structurer les
+    \item Possi
+  \end{itemize}
