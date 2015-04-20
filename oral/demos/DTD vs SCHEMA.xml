@@ -1,0 +1,25 @@
+Démonstration de la puissance de contrôle d'une DTD contre un XMLSchema
+
+            -- DTD --
+ <!ELEMENT etape (distance,temps,description,lieux?)>
+ <!ATTLIST etape 
+        numero NMTOKEN #REQUIRED
+        libelle CDATA #REQUIRED
+    >
+
+        -- XMLSchema --
+<xs:element name="etape">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="distance"/>
+            <xs:element ref="temps"/>
+            <xs:element ref="description"/>
+            <xs:element minOccurs="0" ref="lieux"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="attlist.etape"/>
+    </xs:complexType>
+</xs:element>
+<xs:attributeGroup name="attlist.etape">
+    <xs:attribute name="numero" use="required" type="xs:positiveInteger"/>
+    <xs:attribute name="libelle" use="required" type="xs:string"/>
+</xs:attributeGroup>

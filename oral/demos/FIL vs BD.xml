@@ -1,0 +1,24 @@
+  Démonstration d'une structure de type fil de leau contre bd
+
+        <!-- Fil de leau -->
+    <etape>
+        <num_etape>1</num_etape><libelle>Avenue Joliot-Curie</libelle>
+        <distance><valeur>1220</valeur> <unite>m</unite></distance><temps><heure>00</heure><minute>15</minute></temps>
+        <description>
+            Il faut tourner le dos au <voie_fluviale>gave de Pau</voie_fluviale> et prendre la rue <voie_routiere>de l'Artisanat</voie_routiere> vers le sud. Traversez la double-voie et poursuivez en face par l'<voie_routiere>avenue Joliot-Curie</voie_routiere>.
+        </description>
+    </etape>
+
+        <!-- BD -->
+    <etape numero="1" libelle="Avenue Joliot-Curie">
+        <distance valeur="1220" unite="m"/>
+        <temps valeur="00:15:00"/>
+        <description>
+            Il faut tourner le dos au gave de Pau et prendre la rue de l'Artisanat vers le sud. Traversez la double-voie et poursuivez en face par l'avenue Joliot-Curie. 
+        </description>
+        <lieux>
+            <lieu type="voie_fluviale" coord="43.287530, -0.391115">gave de Pau</lieu>
+            <lieu type="voie_routiere" coord="43.287530, -0.391115">rue de l'Artisanat</lieu>
+            <lieu type="voie_routiere" coord="43.287530, -0.391115">avenue Joliot-Curie</lieu>
+        </lieux>
+    </etape>
